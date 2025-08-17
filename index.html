@@ -23,14 +23,14 @@
         <div id="walletText">
             <img src="images/walletIcon.png" id="walletIcon">
             <h1 id="walletTitle">The only crypto wallet you’ll ever need</h1>
-            <ul class="list">
-                <li class="walletList" id="firstWalletList">
+            <ul id="walletList">
+                <li class="walletListItem" id="firstWalletList">
                     Buy, sell, and swap with ease
                     <p id="walletListText">Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.</p>
                 </li>
-                <li class="walletList">Earn rewards on your crypto</li>
-                <li class="walletList">Self-custody your crypto</li>
-                <li class="walletList">Connect to DeFi</li>
+                <li class="walletListItem">Earn rewards on your crypto</li>
+                <li class="walletListItem">Self-custody your crypto</li>
+                <li class="walletListItem">Connect to DeFi</li>
             </ul>
             <button id="walletButton">Get Started</button>
         </div>
@@ -73,7 +73,7 @@
         <div id="exploreText">
             <img src="images/exploreIcon.png" id="exploreIcon">
             <h1 id="exploreTitle">Blockchain data is in our DNA</h1>
-            <ul class="list">
+            <ul id="exploreList">
                 <li class="exploreListItem" id="firstExploreList">Explore the top blockchains
                     <p id="exploreListText">Confirm transactions, analyze the market, or simply learn more about crypto.</p>
                 </li>
@@ -89,8 +89,12 @@
     </div>
 
     <div id="bar">
-        <h1 id="barText">Let us take you from zero to crypto</h1>
-        <button id="barButton">Get Started</button>
+        <div id="barTextDiv">
+            <h1 id="barText">Let us take you from zero to crypto</h1>
+        </div>
+        <div id="barButtonDiv">
+            <button id="barButton">Get Started</button>
+        </div>
     </div>
 </body>
 </html>
