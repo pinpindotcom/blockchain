@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="js/index.js" defer></script>
 </head>
 <body>
     <div id="header">
@@ -24,13 +25,22 @@
             <img src="images/walletIcon.png" id="walletIcon">
             <h1 id="walletTitle">The only crypto wallet you’ll ever need</h1>
             <ul id="walletList">
-                <li class="walletListItem" id="firstWalletList">
+                <li class="walletListItem active" data-img="images/app-ease@2x.png">
                     Buy, sell, and swap with ease
-                    <p id="walletListText">Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.</p>
+                    <p class="walletListText">Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.</p>
                 </li>
-                <li class="walletListItem">Earn rewards on your crypto</li>
-                <li class="walletListItem">Self-custody your crypto</li>
-                <li class="walletListItem">Connect to DeFi</li>
+                <li class="walletListItem" data-img="images/walletList2.png">
+                    Earn rewards on your crypto
+                    <p class="walletListText">Get up to 10% in annual rewards by putting your crypto to work.</p>
+                </li>
+                <li class="walletListItem" data-img="images/walletList3.png">
+                    Self-custody your crypto
+                    <p class="walletListText">Sleep better at night knowing only you can access your funds.</p>
+                </li>
+                <li class="walletListItem" data-img="images/walletList4.png">
+                    Connect to DeFi
+                    <p class="walletListText">Use dapps, collect NFTs, and unlock the power of web3.</p>
+                </li>
             </ul>
             <button id="walletButton">Get Started</button>
         </div>
@@ -46,13 +56,23 @@
         <div id="exchangeText">
             <img src="images/exchangeIcon.png" id="exchangeIcon">
             <h1 id="exchangeTitle">Lightning-fast crypto trading</h1>
-            <ul id="elist">
-                <li class="exchangeList" id="firstExchangeList">Trade in 3 fiat currencies
-                    <p id="exchangeListText">The Exchange supports USD, EUR, and GBP.</p>
+            <ul id="exchangeList">
+                <li class="exchangeList active" data-img="images/fiat.png">
+                    Trade in 3 fiat currencies
+                    <p class="exchangeListText">The Exchange supports USD, EUR, and GBP.</p>
                 </li>
-                <li class="exchangeList">A matching engine that can keep up with you</li>
-                <li class="exchangeList">24/7 live chat support</li>
-                <li class="exchangeList">Margin Trading</li>
+                <li class="exchangeList" data-img="images/exchangeList2.png">
+                    A matching engine that can keep up with you
+                    <p class="exchangeListText">The world’s fastest crypto matching engine, built by and for traders.</p>
+                </li>
+                <li class="exchangeList" data-img="images/exchangeList3.png">
+                    24/7 live chat support
+                    <p class="exchangeListText">Chat with customer support directly in the Exchange, anytime.</p>
+                </li>
+                <li class="exchangeList" data-img="images/exchangeList4.png">
+                    Margin Trading
+                    <p class="exchangeListText">Integrated margin trading tools</p>
+                </li>
             </ul>
             <button id="exchangeButton">Trade Now</button>
         </div>
@@ -74,13 +94,23 @@
             <img src="images/exploreIcon.png" id="exploreIcon">
             <h1 id="exploreTitle">Blockchain data is in our DNA</h1>
             <ul id="exploreList">
-                <li class="exploreListItem" id="firstExploreList">Explore the top blockchains
-                    <p id="exploreListText">Confirm transactions, analyze the market, or simply learn more about crypto.</p>
+                <li class="exploreListItem active" data-img="images/explore_blockchain.png">
+                    Explore the top blockchains
+                    <p class="exploreListText">Confirm transactions, analyze the market, or simply learn more about crypto.</p>
                 </li>
-                <li class="exploreListItem">Powerful Blockchain Data API</li>
-                <li class="exploreListItem">Industry leading charts</li>
-                <li class="exploreListItem">Real-time crypto prices</li>
-            </ul>
+                <li class="exploreListItem" data-img="images/exploreList2.png">
+                    Powerful Blockchain Data API
+                    <p class="exploreListText">We’ve powered exchanges, data analysts, enthusiasts, and more.</p>
+                </li>
+                <li class="exploreListItem" data-img="images/exploreList3.png">
+                    Industry leading charts
+                    <p class="exploreListText">From hashrate, to block details, to mining information, and more.</p>
+                </li>
+                <li class="exploreListItem" data-img="images/exploreList4.png">
+                    Real-time crypto prices
+                    <p class="exploreListText">Get the latest prices and charts along with key market signals.</p>
+                </li>
+              </ul>
             <button id="exploreButton">Explore now</button>
         </div>
         <div id="explorerPattern">
