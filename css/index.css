@@ -419,6 +419,24 @@ body{
     height: 100%;
 }
 
+#fiat[src="images/exchangeList2.png"] {
+    width: 80%;
+}
+
+#fiat[src="images/exchangeList4.png"] {
+    width: 105%;
+    margin-right: 40%;
+    margin-top: -15%;
+}
+
+#exploreImage[src="images/exploreList2.png"] {
+    width: 95%;
+}
+
+#exploreImage[src="images/exploreList3.png"] {
+    width: 130%;
+}
+
 /* active states */
 .walletListItem.active {
     background-color: #efecfe !important;
@@ -429,6 +447,7 @@ body{
 .exploreListItem.active {
     background-color: #fff2e5 !important;
 }
+
 
 /* Smooth slide for text */
 .walletListText,
@@ -608,4 +627,63 @@ body{
 
 /* Mobile */
 @media (max-width: 768px) {
+
+    #walletIcon{
+        width: 30%;
+    }
+
+    #walletTitle{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #walletText{
+        background-size: 100%;
+        background-position: right 40%;
+    }
+
+    #walletPhone, #walletPattern {
+        width: 80%;
+        z-index: 2;
+        position: absolute;
+        top: 135%;
+        visibility: visible;
+    }
+
+    #institutionalTitle{
+        font-size: 20px;
+    }
+
+    #institutionalIcon{
+        width: 35%;
+    }
+
+    #institutional{
+        min-height: 17rem;
+        background-size: 100%;
+        background-position: 50% -170%;
+    }
+
+    #institutionalButton{
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    #bar{
+        display: block;
+    }
+
+    #barText {
+        font-size: 21px;
+    }
+
+    #barButtonDiv {
+        width: 30%;
+    }
+
+    #barButton {
+        padding: 10% 10%;
+        font-size: 15px;
+        width: 110%;
+    }
 }
