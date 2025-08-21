@@ -8,15 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="js/index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <div id="header">
         <div id="heroContent">
             <h1 id="heroTitle">Be early to the future of finance</h1>
+            <h1 id="heroTitleMobile" class="hideOnPc">The world’s most popular way to buy, sell, and trade crypto</h1>
             <p id="heroParagraph">Buy Bitcoin, Ethereum, and other leading cryptocurrencies on a platform trusted by millions.</p>
-            <input type="email" placeholder="Your email address" id="heroEmail">
-            <button id="heroSignUp">Sign Up</button>
+            <p id="heroParagraphMobile" class="hideOnPC">Trusted by millions since 2011 with over $1 Trillion in crypto transactions.</p>
+            <div id="heroEmailSectionPc">
+                <input type="email" placeholder="Your email address" id="heroEmail">
+                <button id="heroSignUp">Sign Up</button>
+            </div>
+            <button id="heroSignUpMobile" class="hideOnPc">Get started</button>
         </div>
     </div>
 
@@ -24,39 +31,121 @@
         <div id="walletText">
             <img src="images/walletIcon.png" id="walletIcon">
             <h1 id="walletTitle">The only crypto wallet you’ll ever need</h1>
-            <ul id="walletList">
-                <li class="walletListItem active" data-img="images/app-ease@2x.png">
-                    Buy, sell, and swap with ease
-                    <p class="walletListText">Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.</p>
-                </li>
-                <li class="walletListItem" data-img="images/walletList2.png">
-                    Earn rewards on your crypto
-                    <p class="walletListText">Get up to 10% in annual rewards by putting your crypto to work.</p>
-                </li>
-                <li class="walletListItem" data-img="images/walletList3.png">
-                    Self-custody your crypto
-                    <p class="walletListText">Sleep better at night knowing only you can access your funds.</p>
-                </li>
-                <li class="walletListItem" data-img="images/walletList4.png">
-                    Connect to DeFi
-                    <p class="walletListText">Use dapps, collect NFTs, and unlock the power of web3.</p>
-                </li>
+
+            <!-- Mobile carousel -->
+            <div id="walletCarousel" class="carousel slide hideOnPc">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#walletCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#walletCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#walletCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#walletCarousel" data-bs-slide-to="3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                <img src="images/app-ease@2x.png" class="d-block w-100" alt="">
+                <h2 class="mt-3">Buy, sell, and swap with ease</h2>
+                <p>Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.</p>
+                </div>
+                <div class="carousel-item text-center">
+                <img src="images/walletList2.png" class="d-block w-100" alt="">
+                <h2 class="mt-3">Earn rewards on your crypto</h2>
+                <p>Get up to 10% in annual rewards by putting your crypto to work.</p>
+                </div>
+                <div class="carousel-item text-center">
+                <img src="images/walletList3.png" class="d-block w-100" alt="">
+                <h2 class="mt-3">Self-custody your crypto</h2>
+                <p>Sleep better at night knowing only you can access your funds.</p>
+                </div>
+                <div class="carousel-item text-center">
+                <img src="images/walletList4.png" class="d-block w-100" alt="">
+                <h2 class="mt-3">Connect to DeFi</h2>
+                <p>Use dapps, collect NFTs, and unlock the power of web3.</p>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#walletCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#walletCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            </div>
+
+            <!-- Desktop list -->
+            <ul id="walletList" class="hideOnMobile">
+            <li class="walletListItem active" data-img="images/app-ease@2x.png">
+                Buy, sell, and swap with ease
+                <p class="walletListText">Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.</p>
+            </li>
+            <li class="walletListItem" data-img="images/walletList2.png">
+                Earn rewards on your crypto
+                <p class="walletListText">Get up to 10% in annual rewards by putting your crypto to work.</p>
+            </li>
+            <li class="walletListItem" data-img="images/walletList3.png">
+                Self-custody your crypto
+                <p class="walletListText">Sleep better at night knowing only you can access your funds.</p>
+            </li>
+            <li class="walletListItem" data-img="images/walletList4.png">
+                Connect to DeFi
+                <p class="walletListText">Use dapps, collect NFTs, and unlock the power of web3.</p>
+            </li>
             </ul>
+
             <button id="walletButton">Get Started</button>
         </div>
-        <div id="walletPattern">
+
+        <div id="walletPattern" class="hideOnMobile">
             <img src="images/app-ease@2x.png" id="walletPhone">
         </div>
-    </div>
+        </div>
+
 
     <div id="exchange">
-        <div id="exchangePattern">
+        <div id="exchangePattern" class="hideOnMobile">
             <img src="images/fiat.png" id="fiat">
         </div>
         <div id="exchangeText">
             <img src="images/exchangeIcon.png" id="exchangeIcon">
             <h1 id="exchangeTitle">Lightning-fast crypto trading</h1>
-            <ul id="exchangeList">
+
+            <!-- Mobile carousel -->
+            <div id="exchangeCarousel" class="carousel slide hideOnPc">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#exchangeCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#exchangeCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#exchangeCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#exchangeCarousel" data-bs-slide-to="3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <img src="images/fiat.png" class="d-block w-100" alt="">
+                        <h2 class="mt-3">Trade in 3 fiat currencies</h2>
+                        <p>The Exchange supports USD, EUR, and GBP.</p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="images/exchangeList2.png" class="d-block w-100" alt="">
+                        <h2 class="mt-3" id="exchangeItem2Carousel">A matching engine that can keep up with you</h2>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="images/exchangeList3.png" class="d-block w-100" alt="">
+                        <h2 class="mt-3" id="exchangeItem3Carousel">24/7 live chat support</h2>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="images/exchangeList4.png" class="d-block w-100" alt="">
+                        <h2 class="mt-3" id="exchangeItem4Carousel">Margin Trading</h2>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#exchangeCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#exchangeCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <!-- Desktop list -->
+            <ul id="exchangeList" class="hideOnMobile">
                 <li class="exchangeList active" data-img="images/fiat.png">
                     Trade in 3 fiat currencies
                     <p class="exchangeListText">The Exchange supports USD, EUR, and GBP.</p>
@@ -74,6 +163,7 @@
                     <p class="exchangeListText">Integrated margin trading tools</p>
                 </li>
             </ul>
+
             <button id="exchangeButton">Trade Now</button>
         </div>
     </div>
@@ -93,7 +183,44 @@
         <div id="exploreText">
             <img src="images/exploreIcon.png" id="exploreIcon">
             <h1 id="exploreTitle">Blockchain data is in our DNA</h1>
-            <ul id="exploreList">
+
+            <!-- Mobile carousel -->
+            <div id="exploreCarousel" class="carousel slide hideOnPc">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#exploreCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#exploreCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#exploreCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#exploreCarousel" data-bs-slide-to="3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <img src="images/explore_blockchain.png" class="d-block w-100" alt="">
+                        <h2 class="mt-3">Explore the top blockchains</h2>
+                        <p>Confirm transactions, analyze the market, or simply learn more about crypto.</p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="images/exploreList2.png" class="d-block" id="exploreCarousel2" alt="">
+                        <h2 class="mt-3" id="exploreListItem2">Powerful Blockchain Data API</h2>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="images/exploreList3.png" class="d-block" id="exploreCarousel3" alt="">
+                        <h2 class="mt-3" id="exploreListItem3">Industry leading charts</h2>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="images/exploreList4.png" class="d-block" id="exploreCarousel4" alt="">
+                        <h2 class="mt-3" id="exploreListItem4">Real-time crypto prices</h2>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#exploreCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#exploreCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <!-- Desktop list -->
+            <ul id="exploreList" class="hideOnMobile">
                 <li class="exploreListItem active" data-img="images/explore_blockchain.png">
                     Explore the top blockchains
                     <p class="exploreListText">Confirm transactions, analyze the market, or simply learn more about crypto.</p>
@@ -110,10 +237,12 @@
                     Real-time crypto prices
                     <p class="exploreListText">Get the latest prices and charts along with key market signals.</p>
                 </li>
-              </ul>
+            </ul>
+
             <button id="exploreButton">Explore now</button>
         </div>
-        <div id="explorerPattern">
+
+        <div id="explorePattern" class="hideOnMobile">
             <img src="images/explore_blockchain.png" id="exploreImage">
         </div>
     </div>
@@ -123,7 +252,7 @@
             <h1 id="barText">Let us take you from zero to crypto</h1>
         </div>
         <div id="barButtonDiv">
-            <button id="barButton">Get Started</button>
+            <button id="barButton">Get started</button>
         </div>
     </div>
 </body>
