@@ -89,13 +89,123 @@ body{
     display: flex;
 }
 
+/* Crypto Ticker */
+#cryptoTicker {
+    width: 100%;
+    padding: 1rem;
+    overflow-x: auto;
+    position: relative;
+    top: 51%;
+}
+
+.ticker-container {
+    display: flex;
+    gap: 1rem;
+    min-width: max-content;
+}
+
+.ticker-card {
+    background: #fff;
+    border-radius: 7px;
+    padding: 1rem;
+    min-width: 240px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticker-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.ticker-header img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.ticker-info h3 {
+    font-size: 17px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.ticker-info span {
+    color: #555;
+    font-weight: 400;
+}
+
+.ticker-actions {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.buy-btn, .trade-btn {
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.buy-btn {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+.trade-btn {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.ticker-body {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.change {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.positive {
+    color: #16a34a;
+}
+
+.negative {
+    color: #dc2626;
+}
+
+/* Desktop: center cards */
+@media (min-width: 1024px) {
+    #cryptoTicker {
+        overflow: visible;
+    }
+    .ticker-container {
+        justify-content: center;
+    }
+}
+
 #wallet{
     width: 90%;
     min-height: 52.5rem;
     display: flex;
     background-color: #f7f5fe;
     color: #7349f2;
-    margin: 5%;
+    margin: 10% 5% 5% 5%;
     padding: 5% 0% 3% 10%;
     border-radius: 30px;
 }
@@ -669,6 +779,7 @@ body{
     }
 
     #wallet{
+        margin-top: 15%;
         padding: 8% 0% 8% 8%;
         min-height: 47.5rem;
     }
@@ -893,6 +1004,10 @@ body{
         font-weight: 500;
         border: none;
         margin-top: 5%;
+    }
+
+    #wallet{
+        margin-top: 25%;
     }
 
     #walletIcon{
