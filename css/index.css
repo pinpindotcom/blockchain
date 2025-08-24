@@ -980,7 +980,7 @@ body{
     }
 
     #header{
-        height: 90vh;
+        height: 75vh;
     }
 
     #heroContent {
@@ -1011,7 +1011,8 @@ body{
     }
 
     #wallet{
-        margin-top: 25%;
+        margin-top: 35%;
+        min-height: 46.5rem;
     }
 
     #walletIcon{
@@ -1045,8 +1046,8 @@ body{
     }
 
     #exchange{
-        min-height: 42.5rem;
-        max-height: 42.5rem;
+        min-height: 40.5rem;
+        max-height: 40.5rem;
     }
 
     #exchangeIcon{
@@ -1066,25 +1067,25 @@ body{
     }
 
     #exchangeCarousel .carousel-item:nth-child(1) img {
-            max-width: 75%;
+            max-width: 80%;
             margin: 0% auto;
-        }
+    }
 
-        #exchangeCarousel .carousel-item:nth-child(2) img {
-            max-width: 100%;
-            margin-bottom: 27%;
-        }
+    #exchangeCarousel .carousel-item:nth-child(2) img {
+        max-width: 100%;
+        margin-bottom: 35%;
+    }
 
-        #exchangeCarousel .carousel-item:nth-child(3) img {
-            max-width: 90%;
-            margin: 0% auto;
-        }
+    #exchangeCarousel .carousel-item:nth-child(3) img {
+        max-width: 90%;
+        margin: 0% auto;
+    }
 
-        #exchangeCarousel .carousel-item:nth-child(4) img {
-            max-width: 100%;
-            margin-top: 20%;
-            margin-bottom: 25%;
-        }
+    #exchangeCarousel .carousel-item:nth-child(4) img {
+        max-width: 100%;
+        margin-top: 20%;
+        margin-bottom: 32%;
+    }
 
     #exchange{
         padding: 0;
@@ -1130,7 +1131,7 @@ body{
     #institutional{
         min-height: 17rem;
         background-size: 100%;
-        background-position: 50% -170%;
+        background-position: 50% -300%;
     }
 
     #institutionalButton{
@@ -1144,8 +1145,13 @@ body{
     }
 
     #explore{
-        min-height: 36.5rem;
-        max-height: 36.5rem;
+        padding: 0;
+        min-height: 34.5rem;
+        max-height: 34.5rem;
+    }
+
+    #exploreText{
+        padding: 8%;
     }
 
     #exploreButton{
@@ -1153,8 +1159,21 @@ body{
         padding: 10px 15px;
     }
 
-    #exploreCarousel2, #exploreCarousel3, #exploreCarousel4 {
-        width: 100%;
+    #exploreCarousel1, #exploreCarousel2, #exploreCarousel3, #exploreCarousel4{
+        width: 100% !important;
+        margin: 0 auto;
+    }
+
+    #exploreListItem2 {
+        margin-bottom: 19%;
+    }
+
+    #exploreListItem3{
+        margin-bottom: 31%;
+    }
+
+    #exploreListItem4 {
+        margin-bottom: 36%;
     }
 
     #institutionalButton{
