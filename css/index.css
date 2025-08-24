@@ -979,6 +979,10 @@ body{
         display: none;
     }
 
+    #header{
+        height: 90vh;
+    }
+
     #heroContent {
         left: 5%;
     }
@@ -1019,6 +1023,15 @@ body{
         width: 100%;
     }
 
+    #walletCarousel {
+        padding-right: 0;
+    }
+
+    #exchangeCarousel {
+        padding-right: 0;
+        height: 78%;
+    }
+
     #walletText{
         width: 100%;
         background-size: 100%;
@@ -1033,6 +1046,7 @@ body{
 
     #exchange{
         min-height: 42.5rem;
+        max-height: 42.5rem;
     }
 
     #exchangeIcon{
@@ -1058,17 +1072,18 @@ body{
 
         #exchangeCarousel .carousel-item:nth-child(2) img {
             max-width: 100%;
-            margin-bottom: 40%;
+            margin-bottom: 27%;
         }
 
         #exchangeCarousel .carousel-item:nth-child(3) img {
-            max-width: 95%;
+            max-width: 90%;
             margin: 0% auto;
         }
 
         #exchangeCarousel .carousel-item:nth-child(4) img {
             max-width: 100%;
-            margin-bottom: 45%;
+            margin-top: 20%;
+            margin-bottom: 25%;
         }
 
     #exchange{
@@ -1130,11 +1145,16 @@ body{
 
     #explore{
         min-height: 36.5rem;
+        max-height: 36.5rem;
     }
 
     #exploreButton{
         font-size: 16px;
         padding: 10px 15px;
+    }
+
+    #exploreCarousel2, #exploreCarousel3, #exploreCarousel4 {
+        width: 100%;
     }
 
     #institutionalButton{
@@ -1149,7 +1169,11 @@ body{
 
     #bar{
         display: block;
-        padding: 8%;
+        padding: 8% 5%;
+    }
+
+    #barTextDiv {
+        margin-right: 0;
     }
 
     #barText {
@@ -1157,12 +1181,14 @@ body{
     }
 
     #barButtonDiv {
-        width: 30%;
+        width: 90%;
+        margin-top: 5%;
     }
 
     #barButton {
         padding: 10px 15px;
-        font-size: 16px;
-        width: 110%;
+        font-size: 14px;
+        width: 35%;
+        margin: 0;
     }
 }
