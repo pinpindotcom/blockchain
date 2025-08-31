@@ -189,7 +189,6 @@ body{
     color: #dc2626;
 }
 
-/* Desktop: center cards */
 @media (min-width: 1024px) {
     #cryptoTicker {
         overflow: visible;

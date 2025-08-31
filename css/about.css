@@ -135,8 +135,6 @@ body{
     margin-bottom: 5%;
 }
 
-
-
 #aboutBlockchain .col{
     background-repeat: no-repeat;
     display: flex;
@@ -589,7 +587,7 @@ body{
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1024px){
     #hero {
         background-image: url(../images/about/about-hero-bg.png);
         background-repeat: no-repeat;
@@ -691,7 +689,7 @@ body{
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 768px){
     #hero{
         background-size: 85%;
         height: 40vh;
