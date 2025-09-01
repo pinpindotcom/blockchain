@@ -1,3 +1,11 @@
+function showSidebar() {
+    document.querySelector('.sidebar').classList.add('open');
+}
+
+function hideSidebar() {
+    document.querySelector('.sidebar').classList.remove('open');
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   function setupFeature(listSelector, imgSelector) {
       const list = document.querySelector(listSelector);

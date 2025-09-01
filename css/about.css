@@ -131,7 +131,6 @@ nav a:hover{
 
 .sidebar a:hover{
     background-color: transparent;
-    color: #fbc813;
 }
 
 .menuButton{
@@ -409,6 +408,110 @@ nav a:hover{
 .mobile-navbar, .overlay {
     display: none;
 }
+
+.footer {
+    background-color: #ffffff;
+    padding: 10% 5%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 30%;
+}
+
+.logo-section {
+    text-align: center;
+}
+
+.footer-logo {
+    width: 55%;
+    margin-bottom: 10%;
+}
+
+.qr-code {
+    width: 30%;
+}
+
+.qr-text {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+    color: #8d95a4;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: #144699;
+}
+
+.social-section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.social-section a{
+    margin-right: 10%;
+}
+
+.social-section img {
+    width: 105%;
+    vertical-align: middle;
+}
+
+.footer-products-columns {
+    display: flex;
+    justify-content: center;
+    gap: 35%;
+}
+
+.footer-products-columns ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#footerProducts{
+    margin-top: 5%;
+}
+
+/* 
+.footer-line {
+    position: absolute;
+    left: 31%;
+    right: 5%;
+    height: 1px;
+    background-color: #121d33;
+    z-index: 0;
+    width: 35%;
+    margin-top: 20px;
+} */
 
 @media (min-width: 1024px){
     #meetOurTeam .card{
