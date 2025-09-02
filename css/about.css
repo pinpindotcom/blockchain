@@ -853,7 +853,7 @@ nav a:hover{
         margin: 5% 5% 0% 5%;
         background-size: 100%;
         background-position: bottom;
-        height: 90vh;
+        padding-bottom: 65%;
     }
 
     #aboutTextParagraph1, #aboutTextParagraph2 {
@@ -862,7 +862,7 @@ nav a:hover{
 
     #investors {
         width: 90%;
-        margin: 10% 5% 0% 5%;
+        margin: 0% 5% 0% 5%;
     }
 
     #investorsTitle{
@@ -1061,5 +1061,9 @@ nav a:hover{
 
     .footer-logo img{
         width: 70%;
+    }
+
+    .social-section a:last-child{
+        margin: 0;
     }
 }
