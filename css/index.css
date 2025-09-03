@@ -756,7 +756,6 @@ nav a:hover{
 
 #walletCarousel .carousel-indicators {
   position: absolute;
-  bottom: -35px;
   right: 1rem;
   left: auto;
   margin: 0;
@@ -783,7 +782,7 @@ nav a:hover{
 #exchangeCarousel p {
   font-size: 0.9rem;
   text-align: left;
-  padding: 0 0 1.5rem;
+  padding: 0;
 }
 
 #exchangeCarousel .carousel-indicators {
@@ -1104,7 +1103,7 @@ nav a:hover{
 
     #wallet{
         margin-top: 35%;
-        min-height: 45.5rem;
+        min-height: 42.5rem;
         padding: 8%;
         background-image: url(../images/wallet.png);
         background-size: 95%;
@@ -1145,14 +1144,12 @@ nav a:hover{
     /* Exchange */
 
     #exchange{
-        min-height: 41.5rem;
-        max-height: 41.5rem;
-        padding: 0;
+        min-height: 74vh;
+        padding: 0%;
     }
 
     #exchangeCarousel{
         padding-right: 0;
-        height: 67%;
     }
 
     #exchangeIcon {
@@ -1160,48 +1157,81 @@ nav a:hover{
     }
 
     #exchangeTitle{
-        font-size: 22px;
-        margin-bottom: 20%;
+        font-size: 20px;
     }
 
-    #exchangeText{
+    #exchangeText {
         width: 100%;
         padding: 8% 8% 10% 8%;
         background-image: url(../images/exchange.png);
-        background-size: 95%;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-position: left 45%;
+        background-position: left 60%;
     }
-
+    
     #elist{
         width: 75%;
         height: 54%;
     }
 
     #exchangeCarousel .carousel-item:nth-child(1) img {
-        max-width: 65%;
+        max-width: 80%;
         margin: 0% auto;
     }
 
     #exchangeCarousel .carousel-item:nth-child(2) img {
         max-width: 100%;
-        margin-bottom: 14%;
-        margin-top: 10%;
+        margin: 0% auto;
     }
 
     #exchangeCarousel .carousel-item:nth-child(3) img {
-        max-width: 84%;
+        max-width: 82%;
         margin: 0% auto;
     }
 
     #exchangeCarousel .carousel-item:nth-child(4) img {
         max-width: 100%;
-        margin-top: 20%;
-        margin-bottom: 10%;
+        margin: 0% auto;
     }
 
-    #exchangeCarousel .carousel-item:nth-child(3) h2{
-        margin: 0 !important;
+    #exchangeItem1Carousel{
+        margin-bottom: 1rem;
+    }
+
+    #exchangeItem2Carousel{
+        margin-bottom: 1rem;
+    }
+
+    #exchangeItem3Carousel{
+        margin-bottom: 1rem;
+    }
+
+    #exchangeItem4Carousel {
+        margin-bottom: 1rem;
+    }
+
+    #exchangeCarouselImageContainer1{
+        height: 42vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #exchangeCarouselImageContainer2{
+        height: 36vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #exchangeCarouselImageContainer3{
+        height: 38vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #exchangeCarouselImageContainer4{
+        height: 41vh;
+        display: flex;
+        align-items: center;
     }
 
     #exchangeButton{
@@ -1218,12 +1248,12 @@ nav a:hover{
     }
 
     #institutional{
-        padding: 8% 0% 8% 8%;
-        min-height: 17rem;
+        padding: 8% 0% 5% 8%;
+        min-height: 14rem;
         background-image: url(../images/institutional.png);
         background-size: 100%;
         background-repeat: no-repeat;
-        background-position: 50% -200%;
+        background-position: 50% -115%;
     }
 
     #institutionalTitle{
@@ -1246,8 +1276,7 @@ nav a:hover{
 
     #explore{
         padding: 0%;
-        min-height: 36.5rem;
-        max-height: 36.5rem;
+        min-height: 63.5vh;
     }
 
     #exploreIcon{
@@ -1256,38 +1285,40 @@ nav a:hover{
 
     #exploreTitle{
         width: 100%;
-        font-size: 22px;
+        font-size: 20px;
+    }
+
+    #exploreCarouselImageContainer1, #exploreCarouselImageContainer2, #exploreCarouselImageContainer3, #exploreCarouselImageContainer4{
+        height:27vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exploreListItem{
+        width: 90%;
+    }
+
+    #exploreCarousel2{
+        width: 85% !important;
+    }
+
+    #exploreCarousel3, #exploreCarousel4{
+        width: 90%;
     }
 
     #exploreText{
         width: 100%;
         background-image: url(../images/explore.png);
-        background-size: 50%;
         background-repeat: no-repeat;
-        background-position: right bottom;
-    }
-
-    .exploreListItem{
-        width: 70%;
-    }
-
-    #exploreCarousel2{
-        width: 83%;
-    }
-
-    #exploreCarousel3, #exploreCarousel4{
-        width: 80%;
-    }
-
-    #exploreText{
-        width: 100%;
-        background-size: 80%;
-        background-position: right 40%;
+        background-size: 75%;
+        background-position: right 60%;
         padding: 8%;
     }
 
     #exploreCarousel p{
-        width: 80%;
+        width: 100%;
+        margin: 0;
     }
 
     #exploreImageMobile{
@@ -1300,21 +1331,25 @@ nav a:hover{
         padding: 10px 15px;
     }
 
-    #exploreCarousel1, #exploreCarousel2, #exploreCarousel3, #exploreCarousel4{
+    #exploreCarousel1, #exploreCarousel3, #exploreCarousel4{
         width: 100% !important;
         margin: 0 auto;
     }
 
+    #exploreListItem1 {
+        margin-bottom: 1rem;
+    }
+
     #exploreListItem2 {
-        margin-bottom: 19%;
+        margin-bottom: 1rem;
     }
 
     #exploreListItem3{
-        margin-bottom: 31%;
+        margin-bottom: 1rem;
     }
 
     #exploreListItem4 {
-        margin-bottom: 36%;
+        margin-bottom: 1rem;
     }
 
     #bar{
@@ -1658,8 +1693,8 @@ nav a:hover{
 
     #explore{
         padding: 0%;
-        min-height: 36.5rem;
-        max-height: 36.5rem;
+        min-height: 34.5rem;
+        max-height: 34.5rem;
     }
 
     #exploreIcon{
