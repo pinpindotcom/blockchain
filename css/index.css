@@ -972,8 +972,432 @@ nav a:hover{
     margin-bottom: 15%;
 }
 
+/* Mobile */
+@media (max-width: 768px) and (orientation: portrait) {
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .hideOnPc {
+        display: block;
+    }
+
+    #topLogo{
+        width: 53%;
+    }
+
+    #sidebarTop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #emptySpace{
+        background-color: #f7f8fa;
+        height: 10%;
+        display: flex;
+        align-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    #emptySpace2{
+        background-color: #f7f8fa;
+        height: 50%;
+    }
+
+    #productsText{
+        margin: 0% 0% 5% 5%;
+        margin-left: 5%;
+        color: #677185;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    #sidebarLogo{
+        width: 54%;
+        padding: 4% 0% 3% 3%;
+    }
+
+    #closeSidebar{
+        height: 50%;
+        border: none;
+    }
+
+    #closeButton{
+        border: none;
+        margin-right: 5%;
+    }
+
+    nav ul{
+        padding: 3% 2%;
+        justify-content: space-between;
+    }
+
+    .sidebar{
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .menuButton{
+        display: block;
+    }
+
+    #heroTitle, #heroParagraph, #heroEmail, #heroSignUp{
+        display: none;
+    }
+
+    #heroTitleMobile, #heroParagraphMobile, #heroSignUpMobile{
+        display: block;
+    }
+
+    #walletPattern{
+        display: none;
+    }
+
+    #exchangePattern{
+        display: none;
+    }
+
+    #institutionalPattern{
+        display: none;
+    }
+
+    #explorePattern{
+        display: none;
+    }
+
+    #header{
+        height: 75vh;
+    }
+
+    #heroContent {
+        left: 5%;
+        width: 90%;
+    }
+
+    #heroTitleMobile{
+        font-size: 24px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    #heroParagraphMobile{
+        margin-top: 5%;
+        color: white;
+        width: 80%;
+    }
+
+    #heroSignUpMobile{
+        background-color: #0c6cf2;
+        color: #ffffff;
+        font-size: 14px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-weight: 500;
+        border: none;
+        margin-top: 5%;
+    }
+
+    /* Wallet */
+
+    #wallet{
+        margin-top: 35%;
+        min-height: 45.5rem;
+        padding: 8%;
+        background-image: url(../images/wallet.png);
+        background-size: 95%;
+        background-repeat: no-repeat;
+        background-position: left 20px center;
+    }
+
+    #walletIcon{
+        width: 30%;
+    }
+
+    #walletTitle{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #walletCarousel {
+        padding-right: 0;
+    }
+
+    #walletText{
+        width: 100%;
+        background-size: 100%;
+        background-position: right 40%;
+        padding-right: 0%;
+    }
+
+    #walletCarousel .carousel-item img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    #walletButton{
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    /* Exchange */
+
+    #exchange{
+        min-height: 41.5rem;
+        max-height: 41.5rem;
+        padding: 0;
+    }
+
+    #exchangeCarousel{
+        padding-right: 0;
+        height: 67%;
+    }
+
+    #exchangeIcon {
+        width: 35%;
+    }
+
+    #exchangeTitle{
+        font-size: 22px;
+        margin-bottom: 20%;
+    }
+
+    #exchangeText{
+        width: 100%;
+        padding: 8% 8% 10% 8%;
+        background-image: url(../images/exchange.png);
+        background-size: 95%;
+        background-repeat: no-repeat;
+        background-position: left 45%;
+    }
+
+    #elist{
+        width: 75%;
+        height: 54%;
+    }
+
+    #exchangeCarousel .carousel-item:nth-child(1) img {
+        max-width: 65%;
+        margin: 0% auto;
+    }
+
+    #exchangeCarousel .carousel-item:nth-child(2) img {
+        max-width: 100%;
+        margin-bottom: 14%;
+        margin-top: 10%;
+    }
+
+    #exchangeCarousel .carousel-item:nth-child(3) img {
+        max-width: 84%;
+        margin: 0% auto;
+    }
+
+    #exchangeCarousel .carousel-item:nth-child(4) img {
+        max-width: 100%;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+
+    #exchangeCarousel .carousel-item:nth-child(3) h2{
+        margin: 0 !important;
+    }
+
+    #exchangeButton{
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    #institutionalTitle{
+        font-size: 20px;
+    }
+
+    #institutionalIcon{
+        width: 35%;
+    }
+
+    #institutional{
+        padding: 8% 0% 8% 8%;
+        min-height: 17rem;
+        background-image: url(../images/institutional.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% -200%;
+    }
+
+    #institutionalTitle{
+        width: 80%;
+    }
+
+    #institutionalText{
+        width: 100%;
+        padding: 0;
+    }
+
+    #institutionalPattern{
+        width: 0;
+    }
+
+    #institutionalButton{
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    #explore{
+        padding: 0%;
+        min-height: 36.5rem;
+        max-height: 36.5rem;
+    }
+
+    #exploreIcon{
+        width: 30%;
+    }
+
+    #exploreTitle{
+        width: 100%;
+        font-size: 22px;
+    }
+
+    #exploreText{
+        width: 100%;
+        background-image: url(../images/explore.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
+    .exploreListItem{
+        width: 70%;
+    }
+
+    #exploreCarousel2{
+        width: 83%;
+    }
+
+    #exploreCarousel3, #exploreCarousel4{
+        width: 80%;
+    }
+
+    #exploreText{
+        width: 100%;
+        background-size: 80%;
+        background-position: right 40%;
+        padding: 8%;
+    }
+
+    #exploreCarousel p{
+        width: 80%;
+    }
+
+    #exploreImageMobile{
+        width: 105%;
+        margin-top: 19%;
+    }
+
+    #exploreButton{
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    #exploreCarousel1, #exploreCarousel2, #exploreCarousel3, #exploreCarousel4{
+        width: 100% !important;
+        margin: 0 auto;
+    }
+
+    #exploreListItem2 {
+        margin-bottom: 19%;
+    }
+
+    #exploreListItem3{
+        margin-bottom: 31%;
+    }
+
+    #exploreListItem4 {
+        margin-bottom: 36%;
+    }
+
+    #bar{
+        display: block;
+        padding: 8% 5%;
+    }
+
+    #barTextDiv {
+        margin-right: 0;
+    }
+
+    #barText {
+        font-size: 21px;
+    }
+
+    #barButtonDiv {
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    #barButton {
+        padding: 10px 15px;
+        font-size: 14px;
+        width: 35%;
+        margin: 0;
+    }
+    
+    .footer{
+        padding: 10% 7%;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    #imageContainer{
+        display: none;
+    }
+
+    #footerProducts{
+        border: none;
+        padding: 0;
+        margin: 5% 0% 10% 0%;
+        justify-content: flex-start;
+    }
+
+    .footer-logo{
+        margin: 0;   
+        width: 70%;
+    }
+
+    .logo-section{
+        text-align: left;
+    }
+
+    .social-section{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-logo img{
+        width: 70%;
+    }
+
+    .social-section a:last-child{
+        margin: 0;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) and (orientation: landscape) {
+    nav ul {
+        padding: 1%;
+        justify-content: space-between;
+    }
+    
+    #topLogo {
+        width: 26%;
+    }
+}
+
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 1024px) {
 
     .hideOnMobile {
         display: none;
@@ -1245,418 +1669,5 @@ nav a:hover{
     #barButton{
         height: 50%;
         margin-top: 25%;
-    }
-
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-
-    .hideOnMobile {
-        display: none;
-    }
-
-    .hideOnPc {
-        display: block;
-    }
-
-    #topLogo{
-        width: 53%;
-    }
-
-    #sidebarTop{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #emptySpace{
-        background-color: #f7f8fa;
-        height: 10%;
-        display: flex;
-        align-content: flex-end;
-        flex-wrap: wrap;
-    }
-
-    #emptySpace2{
-        background-color: #f7f8fa;
-        height: 50%;
-    }
-
-    #productsText{
-        margin: 0% 0% 5% 5%;
-        margin-left: 5%;
-        color: #677185;
-        font-weight: 600;
-        letter-spacing: 2px;
-    }
-
-    #sidebarLogo{
-        width: 54%;
-        padding: 4% 0% 3% 3%;
-    }
-
-    #closeSidebar{
-        height: 50%;
-        border: none;
-    }
-
-    #closeButton{
-        border: none;
-        margin-right: 5%;
-    }
-
-    nav ul{
-        padding: 3% 2%;
-        justify-content: space-between;
-    }
-
-    .sidebar{
-        display: block;
-        padding: 0;
-        width: 100%;
-    }
-
-    .menuButton{
-        display: block;
-    }
-
-    #heroTitle, #heroParagraph, #heroEmail, #heroSignUp{
-        display: none;
-    }
-
-    #heroTitleMobile, #heroParagraphMobile, #heroSignUpMobile{
-        display: block;
-    }
-
-    #walletPattern{
-        display: none;
-    }
-
-    #exchangePattern{
-        display: none;
-    }
-
-    #institutionalPattern{
-        display: none;
-    }
-
-    #explorePattern{
-        display: none;
-    }
-
-    #header{
-        height: 75vh;
-    }
-
-    #heroContent {
-        left: 5%;
-        width: 90%;
-    }
-
-    #heroTitleMobile{
-        font-size: 24px;
-        font-weight: 500;
-        color: #ffffff;
-    }
-
-    #heroParagraphMobile{
-        margin-top: 5%;
-        color: white;
-        width: 80%;
-    }
-
-    #heroSignUpMobile{
-        background-color: #0c6cf2;
-        color: #ffffff;
-        font-size: 14px;
-        padding: 10px 15px;
-        border-radius: 8px;
-        font-weight: 500;
-        border: none;
-        margin-top: 5%;
-    }
-
-    /* Wallet */
-
-    #wallet{
-        margin-top: 35%;
-        min-height: 46.5rem;
-        padding: 8%;
-        background-image: url(../images/wallet.png);
-        background-size: 95%;
-        background-repeat: no-repeat;
-        background-position: left 20px center;
-    }
-
-    #walletIcon{
-        width: 30%;
-    }
-
-    #walletTitle{
-        font-size: 20px;
-        width: 100%;
-    }
-
-    #walletCarousel {
-        padding-right: 0;
-    }
-
-    #walletText{
-        width: 100%;
-        background-size: 100%;
-        background-position: right 40%;
-        padding-right: 0%;
-    }
-
-    #walletCarousel .carousel-item img {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    #walletButton{
-        font-size: 16px;
-        padding: 10px 15px;
-    }
-
-    /* Exchange */
-
-    #exchange{
-        min-height: 41.5rem;
-        max-height: 41.5rem;
-        padding: 0;
-    }
-
-    #exchangeCarousel{
-        padding-right: 0;
-        height: 69%;
-    }
-
-    #exchangeIcon {
-        width: 35%;
-    }
-
-    #exchangeTitle{
-        font-size: 22px;
-        margin-bottom: 20%;
-    }
-
-    #exchangeText{
-        width: 100%;
-        padding: 8% 8% 10% 8%;
-        background-image: url(../images/exchange.png);
-        background-size: 95%;
-        background-repeat: no-repeat;
-        background-position: left 45%;
-    }
-
-    #elist{
-        width: 75%;
-        height: 54%;
-    }
-
-    #exchangeCarousel .carousel-item:nth-child(1) img {
-        max-width: 65%;
-        margin: 0% auto;
-    }
-
-    #exchangeCarousel .carousel-item:nth-child(2) img {
-        max-width: 100%;
-        margin-bottom: 14%;
-        margin-top: 10%;
-    }
-
-    #exchangeCarousel .carousel-item:nth-child(3) img {
-        max-width: 84%;
-        margin: 0% auto;
-    }
-
-    #exchangeCarousel .carousel-item:nth-child(4) img {
-        max-width: 100%;
-        margin-top: 20%;
-        margin-bottom: 10%;
-    }
-
-    #exchangeCarousel .carousel-item:nth-child(3) h2{
-        margin: 0 !important;
-    }
-
-    #exchangeButton{
-        font-size: 16px;
-        padding: 10px 15px;
-    }
-
-    #institutionalTitle{
-        font-size: 20px;
-    }
-
-    #institutionalIcon{
-        width: 35%;
-    }
-
-    #institutional{
-        padding: 8% 0% 8% 8%;
-        min-height: 17rem;
-        background-image: url(../images/institutional.png);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: 50% -200%;
-    }
-
-    #institutionalTitle{
-        width: 80%;
-    }
-
-    #institutionalText{
-        width: 100%;
-        padding: 0;
-    }
-
-    #institutionalPattern{
-        width: 0;
-    }
-
-    #institutionalButton{
-        font-size: 16px;
-        padding: 10px 15px;
-    }
-
-    #explore{
-        padding: 0%;
-        min-height: 36.5rem;
-        max-height: 36.5rem;
-    }
-
-    #exploreIcon{
-        width: 30%;
-    }
-
-    #exploreTitle{
-        width: 100%;
-        font-size: 22px;
-    }
-
-    #exploreText{
-        width: 100%;
-        background-image: url(../images/explore.png);
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position: right bottom;
-    }
-
-    .exploreListItem{
-        width: 70%;
-    }
-
-    #exploreCarousel2{
-        width: 83%;
-    }
-
-    #exploreCarousel3, #exploreCarousel4{
-        width: 80%;
-    }
-
-    #exploreText{
-        width: 100%;
-        background-size: 80%;
-        background-position: right 40%;
-        padding: 8%;
-    }
-
-    #exploreCarousel p{
-        width: 80%;
-    }
-
-    #exploreImageMobile{
-        width: 105%;
-        margin-top: 19%;
-    }
-
-    #exploreButton{
-        font-size: 16px;
-        padding: 10px 15px;
-    }
-
-    #exploreCarousel1, #exploreCarousel2, #exploreCarousel3, #exploreCarousel4{
-        width: 100% !important;
-        margin: 0 auto;
-    }
-
-    #exploreListItem2 {
-        margin-bottom: 19%;
-    }
-
-    #exploreListItem3{
-        margin-bottom: 31%;
-    }
-
-    #exploreListItem4 {
-        margin-bottom: 36%;
-    }
-
-    #bar{
-        display: block;
-        padding: 8% 5%;
-    }
-
-    #barTextDiv {
-        margin-right: 0;
-    }
-
-    #barText {
-        font-size: 21px;
-    }
-
-    #barButtonDiv {
-        width: 90%;
-        margin-top: 5%;
-    }
-
-    #barButton {
-        padding: 10px 15px;
-        font-size: 14px;
-        width: 35%;
-        margin: 0;
-    }
-    
-    .footer{
-        padding: 10% 7%;
-    }
-
-    .footer-container{
-        flex-direction: column;
-    }
-
-    #imageContainer{
-        display: none;
-    }
-
-    #footerProducts{
-        border: none;
-        padding: 0;
-        margin: 5% 0% 10% 0%;
-        justify-content: flex-start;
-    }
-
-    .footer-logo{
-        margin: 0;   
-        width: 70%;
-    }
-
-    .logo-section{
-        text-align: left;
-    }
-
-    .social-section{
-        width: 100%;
-        justify-content: center;
-    }
-
-    .footer-logo img{
-        width: 70%;
-    }
-
-    .social-section a:last-child{
-        margin: 0;
     }
 }
