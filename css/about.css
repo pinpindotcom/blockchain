@@ -91,6 +91,12 @@ nav a:hover{
     border-top: solid 1px #f0f2f7;
 }
 
+.sidebarItem:hover .sidebarLink,
+.sidebarItem:hover p {
+    color: #121d33;
+    transition: 0.3s ease;
+}
+
 #sidebarLastElement{
     border-bottom:  solid 1px #f0f2f7;
 }
@@ -749,7 +755,7 @@ nav a:hover{
 
     #heroText {
         width: 90%;
-        top: 13%;
+        top: 20%;
         left: 5%;
     }
 

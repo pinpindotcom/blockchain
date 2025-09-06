@@ -43,12 +43,6 @@ nav ul {
     margin-right: 2%;
 }
 
-nav li{
-    width: auto;
-    display: flex;
-    justify-content: center;
-}
-
 nav a{
     height: 100%;
     padding: 3px 15px;
@@ -99,6 +93,12 @@ nav a:hover{
     border-top: solid 1px #f0f2f7;
 }
 
+.sidebarItem:hover .sidebarLink,
+.sidebarItem:hover p {
+    color: #121d33;
+    transition: 0.3s ease;
+}
+
 #sidebarLastElement{
     border-bottom:  solid 1px #f0f2f7;
 }
@@ -116,16 +116,21 @@ nav a:hover{
 }
 
 .sidebarIcons{
-    width: 14%;
+    width: 100%;
 }
 
-.sidebar a{
+.sidebarLink{
     width: 100%;
     color: #121d33;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+}
+
+.iconLinks{
+    width: 11%;
+    padding: 0;
 }
 
 .sidebar p{
@@ -145,11 +150,11 @@ nav a:hover{
     display: none;
 }
 
-#heroTitle, #heroParagraph, #heroEmail, #heroSignUp{
+#heroTitle, #heroParagraph{
     display: block;
 }
 
-#heroTitleMobile, #heroParagraphMobile, #heroSignUpMobile{
+#heroTitleMobile, #heroParagraphMobile{
     display: none;
 }
 
@@ -184,45 +189,13 @@ nav a:hover{
     margin-bottom: 3%;
 }
 
-#heroEmail{
-    width: 100%;
-    max-width: 24rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25rem;
-    color: rgb(255, 255, 255);
-    margin-right: 0.75rem;
-}
-
-#heroEmail::placeholder {
-    color: #ffffff;
-}
-
-#heroSignUp{
-    background-color: #ffffff;
-    color: #0c6cf2;
-    font-size: 14px;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    font-weight: 500;
-    border: none;
-}
-
-#heroEmailSectionPc{
-    display: flex;
-}
-
 /* Crypto Ticker */
 #cryptoTicker {
     width: 100%;
     padding: 1rem;
     overflow-x: auto;
     position: relative;
-    top: 51%;
+    top: 35%;
 }
 
 .ticker-container {
@@ -747,7 +720,7 @@ nav a:hover{
 }
 
 #exchangeCarousel h2 {
-  font-size: 16px;
+  font-size: 20px;
   text-align: left;
   margin-top: 1rem;
 }
@@ -1016,12 +989,16 @@ nav a:hover{
         display: block;
     }
 
-    #heroTitle, #heroParagraph, #heroEmail, #heroSignUp{
+    #heroTitle, #heroParagraph{
         display: none;
     }
 
-    #heroTitleMobile, #heroParagraphMobile, #heroSignUpMobile{
+    #heroTitleMobile, #heroParagraphMobile{
         display: block;
+    }
+
+    #cryptoTicker{
+        top: 50%;
     }
 
     #walletPattern{
@@ -1059,17 +1036,6 @@ nav a:hover{
         margin-top: 5%;
         color: white;
         width: 80%;
-    }
-
-    #heroSignUpMobile{
-        background-color: #0c6cf2;
-        color: #ffffff;
-        font-size: 14px;
-        padding: 10px 15px;
-        border-radius: 8px;
-        font-weight: 500;
-        border: none;
-        margin-top: 5%;
     }
 
     .exchangecarouselText{
@@ -1452,11 +1418,11 @@ nav a:hover{
         display: block;
     }
 
-    #heroTitle, #heroParagraph, #heroEmail, #heroSignUp{
+    #heroTitle, #heroParagraph{
         display: none;
     }
 
-    #heroTitleMobile, #heroParagraphMobile, #heroSignUpMobile{
+    #heroTitleMobile, #heroParagraphMobile{
         display: block;
     }
 
@@ -1495,17 +1461,6 @@ nav a:hover{
         margin-top: 5%;
         color: white;
         width: 80%;
-    }
-
-    #heroSignUpMobile{
-        background-color: #0c6cf2;
-        color: #ffffff;
-        font-size: 14px;
-        padding: 10px 15px;
-        border-radius: 8px;
-        font-weight: 500;
-        border: none;
-        margin-top: 5%;
     }
 
     /* Wallet */
@@ -1878,15 +1833,6 @@ nav a:hover{
 
     #heroParagraph{
         width: 90%;
-    }
-
-    #heroEmail{
-        font-size: 14px;
-        padding: 12px;
-    }
-
-    #heroSignUp{
-        padding: 10px 15px;
     }
 
     #walletPattern{

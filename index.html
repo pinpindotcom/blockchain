@@ -14,13 +14,13 @@
    </head>
    <body>
 
-    <nav class="nav">
+   <nav class="nav">
 
-        <!-- Sidebar -->
+      <!-- Sidebar -->
 
-        <ul class="sidebar">
+      <ul class="sidebar">
             <div id="sidebarTop">
-                <img src="images/sidebarLogo.png" id="sidebarLogo">
+                <img src="images/BlockchainDatabase.png" id="sidebarLogo">
                 <li onclick="hideSidebar()" id="closeButton"><a href="#" id="closeSidebar" onclick="event.preventDefault()"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             </div>
             <div id="emptySpace">
@@ -29,66 +29,78 @@
             <div id="sidebarElements">
                 <li>
                     <div class="sidebarItem">
-                        <img src="images/homeSidebarIcon.png" class="sidebarIcons">
+                        <a href="index.html" class="iconLinks">
+                            <img src="images/homeSidebarIcon.png" class="sidebarIcons">
+                        </a>
                         <div class="sidebarItemText">
-                            <a href="index.html">Home</a>
+                            <a href="index.html" class="sidebarLink">Home</a>
                             <p>Overview and latest highlights</p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="sidebarItem">
-                        <img src="images/aboutSidebarIcon.png" class="sidebarIcons">
+                        <a href="about.html" class="iconLinks">
+                            <img src="images/aboutSidebarIcon.png" class="sidebarIcons">
+                        </a>
                         <div class="sidebarItemText">
-                            <a href="about.html">About</a>
+                            <a href="about.html" class="sidebarLink">About</a>
                             <p>Learn more about our mission</p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="sidebarItem">
-                        <img src="images/explorerSidebarIcon.png" class="sidebarIcons">
+                        <a href="https://www.blockchain.com/explorer" class="iconLinks">
+                            <img src="images/explorerSidebarIcon.png" class="sidebarIcons">
+                        </a>
                         <div class="sidebarItemText">
-                            <a href="https://www.blockchain.com/explorer">Explorer</a>
+                            <a href="https://www.blockchain.com/explorer" class="sidebarLink">Explorer</a>
                             <p>Live Data, Charts & Transactions</p>
                         </div>
                     </div>                
                 </li>
                 <li>
                     <div class="sidebarItem">
-                        <img src="images/getstartedSidebarIcon.png" class="sidebarIcons">
+                        <a href="#" class="iconLinks">
+                            <img src="images/getstartedSidebarIcon.png" class="sidebarIcons">
+                        </a>
                         <div class="sidebarItemText">
-                            <a href="#">Get Started</a>
+                            <a href="#" class="sidebarLink">Get Started</a>
                             <p>Setup your account quickly</p>
                         </div>
                     </div>  
                 </li>
                 <li>
                     <div class="sidebarItem">
-                        <img src="images/privacySidebarIcon.png" class="sidebarIcons">
+                        <a href="#" class="iconLinks">
+                            <img src="images/privacySidebarIcon.png" class="sidebarIcons">
+                        </a>
                         <div class="sidebarItemText">
-                            <a href="#">Privacy</a>
+                            <a href="#" class="sidebarLink">Privacy</a>
                             <p>Protecting your data and funds</p>
                         </div>
                     </div>  
                 </li>
                 <li id="sidebarLastElement">
                     <div class="sidebarItem">
-                        <img src="images/contactSidebarIcon.jpg" class="sidebarIcons">
+                        <a href="#" class="iconLinks">
+                            <img src="images/contactSidebarIcon.jpg" class="sidebarIcons">
+                        </a>
                         <div class="sidebarItemText">
-                            <a href="#">Contact</a>
+                            <a href="#" class="sidebarLink">Contact</a>
                             <p>Reach out for support and help</p>
                         </div>
                     </div>
                 </li>
             </div>
             <div id="emptySpace2"></div>
-        </ul>
+         </ul>
 
         <!-- NavBar -->
 
-        <ul>
-            <img src="images/navbarLogo.png" id="topLogo">
+         <ul>
+            <img src="images/BlockchainDatabaseNavbar.png" id="topLogo">
             <li class="hideOnMobile"><a href="index.html">Home</a></li>
             <li class="hideOnMobile"><a href="about.html">About</a></li>
             <li class="hideOnMobile"><a href="https://www.blockchain.com/explorer">Explorer</a></li>
@@ -96,8 +108,8 @@
             <li class="hideOnMobile"><a href="#">Privacy</a></li>
             <li class="hideOnMobile"><a href="#">Contact</a></li>
             <li class="menuButton" onclick="showSidebar()"><a href="#" onclick="event.preventDefault()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>
-    </nav>
+         </ul>
+      </nav>
    
       <div id="header">
           <div id="heroContent">
@@ -105,8 +117,6 @@
             <h1 id="heroTitleMobile" class="hideOnPc">The world’s most popular way to buy, sell, and trade crypto</h1>
             <p id="heroParagraph">Buy Bitcoin, Ethereum, and other leading cryptocurrencies on a platform trusted by millions.</p>
             <p id="heroParagraphMobile" class="hideOnPC">Trusted by millions since 2011 with over $1 Trillion in crypto transactions.</p>
-            <div id="heroEmailSectionPc"> <input type="email" placeholder="Your email address" id="heroEmail"> <button id="heroSignUp">Sign Up</button> </div>
-            <button id="heroSignUpMobile" class="hideOnPc">Get started</button> 
           </div>
           <!-- Crypto Ticker Section --> 
           <div id="cryptoTicker">
@@ -392,7 +402,7 @@
          <div class="footer-container">
                <!-- Logo + QR code -->
                <div class="footer-section logo-section">
-                  <img src="images/footerLogo.png" alt="Blockchain.com" class="footer-logo">
+                  <img src="images/BlockchainDatabase.png" alt="BlockchainDatabase.com" class="footer-logo">
                   <div id="imageContainer">
                      <img src="images/QR_code_for_mobile.png" alt="Scan to Download" class="qr-code">
                      <p class="qr-text">Scan to Download</p>
