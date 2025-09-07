@@ -720,6 +720,10 @@ nav a:hover{
         margin-left: 2%;
     }
 
+    .iconLinks{
+        width: 13%;
+    }
+
     #meetOurTeam .card {
         max-width: 17rem;
     }
@@ -763,7 +767,7 @@ nav a:hover{
     }
 
     .iconLinks{
-        width: 15%;
+        width: 17%;
     }
 
     #emptySpace{
@@ -1124,6 +1128,30 @@ nav a:hover{
         height: 20%;
     }
 
+    .sidebar {
+        width: 75%;
+    }
+
+    #sidebarLogo{
+        width: 30%;
+    }
+
+    #emptySpace{
+        height: 15%;
+    }
+
+    .iconLinks {
+        width: 7%;
+    }
+
+    .sidebarLink{
+        font-size: 14px;
+    }
+
+    .sidebar p{
+        font-size: 14px;
+    }
+
     #hero{
         background-size: 55%;
         height: 100vh;
@@ -1150,8 +1178,12 @@ nav a:hover{
         font-size: 18px;
     }
 
+    #meetOurTeam .col{
+        padding: 0;
+    }
+
     #meetOurTeam .card {
-        max-width: 15rem;
+        max-width: 12rem;
     }
 
     #aboutBlockchainIcon {
@@ -1170,6 +1202,10 @@ nav a:hover{
         height: 11rem;
     } 
 
+    #aboutText{
+        background-size: 35%;
+    }
+
     #investorsTitle{
         font-size: 30px;
     }
@@ -1180,5 +1216,9 @@ nav a:hover{
 
     #barText{
         font-size: 35px;
+    }
+
+    .footer-logo {
+        width: 50%;
     }
 }
