@@ -201,7 +201,8 @@ nav a:hover{
 
 #meetOurTeam .card {
     border: none;
-    width: 22rem;
+    max-width: 19rem;
+    padding: 0;
 }
 
 #meetOurTeam .col {
@@ -512,14 +513,7 @@ nav a:hover{
     margin-bottom: 15%;
 }
 
-@media (min-width: 1024px){
-    #meetOurTeam .card{
-        max-width: 19rem;
-        padding: 0;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1366px){
     
     #topLogo{
         width: 26%;
@@ -627,7 +621,7 @@ nav a:hover{
     }
 
     #aboutBlockchainIcon {
-        width: 8%;
+        width: 5%;
         margin-bottom: 2%;
     }
 
@@ -672,9 +666,39 @@ nav a:hover{
     }
 
     #bar{
-        padding: 10% 7%;
+        padding: 5% 7%;
         background-position: top right;
         background-size: 100rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape){
+
+    #hero{
+        background-size: 70%;
+        height: 80vh;
+    }
+
+    #heroText {
+        width: 55%;
+        top: 30%;
+    }
+
+    #meetOurTeam .card {
+        max-width: 15rem;
+    }
+
+    #aboutBlockchainIcon {
+        width: 6%;
+    }
+
+    #aboutText{
+        background-position: right;
+        background-size: 35%;
+    }
+
+    #bar{
+        padding: 5% 7%;
     }
 }
 
@@ -783,6 +807,10 @@ nav a:hover{
 
     #teamParagraph{
         font-size: 17px;
+    }
+
+    #meetOurTeam{
+        padding: 0;
     }
 
     #meetOurTeam .col {
