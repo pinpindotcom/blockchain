@@ -515,7 +515,7 @@ nav a:hover{
     margin-bottom: 15%;
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1366px){
     
     #topLogo{
         width: 25%;
@@ -686,7 +686,7 @@ nav a:hover{
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape){
 
     #hero{
         background-size: 70%;
