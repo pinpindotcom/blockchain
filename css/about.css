@@ -518,7 +518,8 @@ nav a:hover{
 @media (min-width: 768px) and (max-width: 1024px){
     
     #topLogo{
-        width: 20%;
+        width: 25%;
+        margin-left: 3%;
     }
 
     #sidebarTop{
@@ -689,7 +690,7 @@ nav a:hover{
 
     #hero{
         background-size: 70%;
-        height: 80vh;
+        height: 90vh;
     }
 
     #heroText {
@@ -703,20 +704,28 @@ nav a:hover{
 
     #topLogo{
         width: 30%;
-        padding-left: 2%;
+        margin-left: 2%;
     }
 
     #meetOurTeam .card {
-        max-width: 15rem;
+        max-width: 17rem;
     }
 
     #aboutBlockchainIcon {
-        width: 6%;
+        width: 5%;
     }
 
     #aboutText{
         background-position: right;
         background-size: 35%;
+    }
+
+    #aboutBlockchain .col {
+        height: 14rem;
+    }
+
+    #aboutBlockchain .colTitle {
+        font-size: 3rem;
     }
 
     #bar{
