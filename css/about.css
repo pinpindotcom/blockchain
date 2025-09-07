@@ -114,7 +114,7 @@ nav a:hover{
 }
 
 .sidebarIcons{
-    width: 100%;
+    width: 90%;
 }
 
 .sidebarLink{
@@ -127,8 +127,10 @@ nav a:hover{
 }
 
 .iconLinks{
-    width: 11%;
+    width: 10%;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .sidebar p{
@@ -516,7 +518,7 @@ nav a:hover{
 @media (min-width: 768px) and (max-width: 1366px){
     
     #topLogo{
-        width: 26%;
+        width: 20%;
     }
 
     #sidebarTop{
@@ -535,7 +537,7 @@ nav a:hover{
 
     #emptySpace2{
         background-color: #f7f8fa;
-        height: 50%;
+        height: 100%;
     }
 
     #productsText{
@@ -728,7 +730,7 @@ nav a:hover{
 
     #emptySpace2{
         background-color: #f7f8fa;
-        height: 50%;
+        height: 100%;
     }
 
     #productsText{
@@ -1061,3 +1063,27 @@ nav a:hover{
         margin: 0;
     }
 }
+/* 
+@media (max-width: 768px) and (orientation: landscape){
+
+    #hero{
+        background-size: 70%;
+        height: 70vh;
+    }
+
+    #heroText {
+        width: 65%;
+    }
+
+    #heroTitle {
+        font-size: 30px;
+    }
+
+    #meetOurTeam .card {
+        max-width: 15rem;
+    }
+
+    #aboutBlockchainIcon {
+        width: 10%;
+    }
+} */
