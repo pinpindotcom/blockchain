@@ -518,7 +518,7 @@ nav a:hover{
 @media (min-width: 768px) and (max-width: 1024px){
     
     #topLogo{
-        width: 10%;
+        width: 15%;
     }
 
     #sidebarTop{
@@ -684,6 +684,10 @@ nav a:hover{
     #heroText {
         width: 55%;
         top: 30%;
+    }
+
+    #topLogo{
+        width: 20%;
     }
 
     #meetOurTeam .card {
