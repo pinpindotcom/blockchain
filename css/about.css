@@ -518,7 +518,7 @@ nav a:hover{
 @media (min-width: 768px) and (max-width: 1024px){
     
     #topLogo{
-        width: 15%;
+        width: 20%;
     }
 
     #sidebarTop{
@@ -586,7 +586,7 @@ nav a:hover{
         background-image: url(../images/about/about-hero-bg.png);
         background-repeat: no-repeat;
         background-position: bottom right;
-        height: 50vh;
+        height: 65vh;
         background-color: #121d33;
         color: #ffffff;
         background-size: 92%;
@@ -597,6 +597,10 @@ nav a:hover{
         position: absolute;
         top: 15%;
         left: 5%;
+    }
+
+    #heroTitle {
+        font-size: 40px;
     }
 
     #team {
@@ -614,7 +618,7 @@ nav a:hover{
     }
 
     #meetOurTeam .card{
-        max-width: 13rem;
+        max-width: 12rem;
     }
 
     #aboutBlockchain {
@@ -623,7 +627,7 @@ nav a:hover{
     }
 
     #aboutBlockchainIcon {
-        width: 5%;
+        width: 7%;
         margin-bottom: 2%;
     }
 
@@ -643,6 +647,13 @@ nav a:hover{
         background-size: 50%;
         background-repeat: no-repeat;
         background-position: bottom right;
+    }
+    #aboutBlockchain .col {
+        height: 13rem;
+    }
+
+    #aboutBlockchain .colTitle {
+        font-size: 2rem;
     }
 
     #aboutTextParagraph1, #aboutTextParagraph2 {
@@ -686,8 +697,12 @@ nav a:hover{
         top: 30%;
     }
 
+    #heroTitle {
+        font-size: 40px;
+    }
+
     #topLogo{
-        width: 25%;
+        width: 30%;
         padding-left: 2%;
     }
 
