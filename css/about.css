@@ -720,6 +720,10 @@ nav a:hover{
         margin-left: 2%;
     }
 
+    .sidebar{
+        width: 60%;
+    }
+
     .iconLinks{
         width: 13%;
     }

@@ -918,7 +918,7 @@ nav a:hover{
 }
 
 /* Mobile */
-@media (max-width: 768px) and (orientation: portrait) {
+@media (max-width: 767px){
 
     .hideOnMobile {
         display: none;
@@ -1118,7 +1118,7 @@ nav a:hover{
     }
 
     #exchangeCarousel .carousel-item:nth-child(1) img {
-        max-width: 80%;
+        max-width: 75%;
         margin: 0% auto;
     }
 
@@ -1347,7 +1347,7 @@ nav a:hover{
 }
 
 /* Mobile Landscape */
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 767px) and (orientation: landscape) {
 
     .hideOnMobile {
         display: none;
@@ -1748,7 +1748,7 @@ nav a:hover{
 }
 
 /* Tablet */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1366px) {
 
     .hideOnMobile {
         display: none;
@@ -2043,5 +2043,63 @@ nav a:hover{
         padding: 10% 7%;
         background-position: top right;
         background-size: 100rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape){
+        #hero{
+        background-size: 70%;
+        height: 90vh;
+    }
+
+    #heroText {
+        width: 55%;
+        top: 30%;
+    }
+
+    #heroTitle {
+        font-size: 40px;
+    }
+
+    #topLogo{
+        width: 30%;
+        margin-left: 2%;
+    }
+
+    .sidebar{
+        width: 60%;
+    }
+
+    .iconLinks{
+        width: 13%;
+    }
+
+    #meetOurTeam .card {
+        max-width: 17rem;
+    }
+
+    #aboutBlockchainIcon {
+        width: 5%;
+    }
+
+    #aboutText{
+        background-position: right;
+        background-size: 35%;
+    }
+
+    #aboutBlockchain .col {
+        height: 14rem;
+    }
+
+    #aboutBlockchain .colTitle {
+        font-size: 3rem;
+    }
+
+    #bar{
+        padding: 5% 7%;
+    }
+
+    .footer-logo{
+        width: 70%;
     }
 }
