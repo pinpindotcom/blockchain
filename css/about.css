@@ -1187,11 +1187,11 @@ nav a:hover{
     }
 
     #meetOurTeam .card {
-        max-width: 12rem;
+        max-width: 13rem;
     }
 
     #aboutBlockchainIcon {
-        width: 5%;
+        width: 7%;
     }
 
     #aboutBlockchainTitle{
@@ -1207,7 +1207,7 @@ nav a:hover{
     } 
 
     #aboutText{
-        background-size: 35%;
+        background-size: 45%;
     }
 
     #investorsTitle{
