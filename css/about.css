@@ -594,7 +594,7 @@ nav a:hover{
         background-image: url(../images/about/about-hero-bg.png);
         background-repeat: no-repeat;
         background-position: bottom right;
-        height: 90vh;
+        height: 50vh;
         background-color: #121d33;
         color: #ffffff;
         background-size: 92%;
@@ -899,8 +899,12 @@ nav a:hover{
     }
 
     #aboutBlockchainIcon {
-        width: 15%;
+        width: 13%;
         margin-bottom: 5%;
+    }
+
+    .card-title{
+        font-size: 18px;
     }
 
     #aboutBlockchain .colTitle {
@@ -1203,7 +1207,7 @@ nav a:hover{
     }
 
     nav ul{
-        padding: 3% 2%;
+        padding: 1% 2%;
         justify-content: space-between;
     }
 
@@ -1265,10 +1269,15 @@ nav a:hover{
 
     #aboutBlockchain .col{
         height: 11rem;
-    } 
+    }
 
-    #aboutText{
-        background-size: 45%;
+    #aboutBlockchain .col {
+        padding: 2% 1%;
+    }
+
+    #aboutText {
+        background-size: 60%;
+        padding-bottom: 35%;
     }
 
     #investorsTitle{

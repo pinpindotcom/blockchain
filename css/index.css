@@ -14,6 +14,10 @@ body{
     display: block;
 }
 
+.hideOnMobileElements{
+    display: block;
+}
+
 .hideOnPc {
     display: none;
 }
@@ -926,6 +930,10 @@ nav a:hover{
         display: none;
     }
 
+    .hideOnMobileElements{
+        display: none;
+    }
+
     .hideOnPc {
         display: block;
     }
@@ -1359,6 +1367,10 @@ nav a:hover{
         display: block;
     }
 
+    .hideOnMobileElements{
+        display: none;
+    }
+
     .hideOnPc{
         display: block;
     }
@@ -1419,7 +1431,7 @@ nav a:hover{
     }
 
     nav ul{
-        padding: 3% 2%;
+        padding: 1% 2%;
         justify-content: space-between;
     }
 
@@ -1458,12 +1470,16 @@ nav a:hover{
     }
 
     #header{
-        height: 75vh;
+        height: 100vh;
     }
 
     #heroContent {
         left: 5%;
         width: 90%;
+    }
+
+    #cryptoTicker{
+        top: 55%;
     }
 
     #heroTitleMobile{
@@ -1476,6 +1492,10 @@ nav a:hover{
         margin-top: 5%;
         color: white;
         width: 80%;
+    }
+
+    .ticker-card{
+        width: 20%;
     }
 
     /* Wallet */
@@ -1766,6 +1786,10 @@ nav a:hover{
 @media (min-width: 768px) and (max-width: 1366px) {
 
     .hideOnMobile{
+        display: none;
+    }
+
+    .hideOnMobileElements{
         display: none;
     }
 
@@ -2077,6 +2101,10 @@ nav a:hover{
 
     .hideOnMobile{
         display: block;
+    }
+
+    .hideOnMobileElements{
+        display: none;
     }
 
     .hideOnPc{
