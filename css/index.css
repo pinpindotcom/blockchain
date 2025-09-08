@@ -116,7 +116,7 @@ nav a:hover{
 }
 
 .sidebarIcons{
-    width: 100%;
+    width: 70%;
 }
 
 .sidebarLink{
@@ -129,8 +129,10 @@ nav a:hover{
 }
 
 .iconLinks{
-    width: 11%;
+    width: 15%;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .sidebar p{
@@ -985,6 +987,10 @@ nav a:hover{
         width: 100%;
     }
 
+    .iconLinks{
+        width: 17%;
+    }
+
     .menuButton{
         display: block;
     }
@@ -1414,6 +1420,10 @@ nav a:hover{
         width: 100%;
     }
 
+    .iconLinks {
+        width: 7%;
+    }
+
     .menuButton{
         display: block;
     }
@@ -1809,14 +1819,14 @@ nav a:hover{
         justify-content: space-between;
     }
 
-    .sidebarIcons {
-        width: 12%;
-    }
-
     .sidebar{
         display: block;
         padding: 0;
         width: 75%;
+    }
+
+    .iconLinks{
+        width: 13%;
     }
 
     .menuButton{
@@ -1824,7 +1834,7 @@ nav a:hover{
     }
 
     #header{
-        height: 60vh;
+        height: 75vh;
     }
 
     #heroTitle{
@@ -1852,7 +1862,7 @@ nav a:hover{
     }
 
     #wallet{
-        margin-top: 35%;
+        margin-top: 15%;
         min-height: 42.5rem;
         padding: 8%;
         background-image: url(../images/wallet.png);
@@ -2047,8 +2057,8 @@ nav a:hover{
 }
 
 @media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape){
-        #hero{
-        background-size: 70%;
+
+    #header{
         height: 90vh;
     }
 
@@ -2074,25 +2084,91 @@ nav a:hover{
         width: 13%;
     }
 
-    #meetOurTeam .card {
-        max-width: 17rem;
+    #wallet{
+        margin-top: 10%;
+        background-size: 65%;
+        width: 80%;
+        margin: 10% 10% 5% 10%;
+        padding: 5%;
     }
 
-    #aboutBlockchainIcon {
-        width: 5%;
+    #walletCarousel .carousel-item img{
+       max-width: 35%;
     }
 
-    #aboutText{
-        background-position: right;
-        background-size: 35%;
+    #exchange{
+        width: 80%;
+        margin: 0% 10% 5% 10%;
+        padding: 0%;
     }
 
-    #aboutBlockchain .col {
-        height: 14rem;
+    #exchangeText{
+        background-size: 55%;
+        background-position: bottom 30% left;
+        padding: 5%;
     }
 
-    #aboutBlockchain .colTitle {
-        font-size: 3rem;
+    #exchangeCarouselImageContainer1, #exchangeCarouselImageContainer2, #exchangeCarouselImageContainer3, #exchangeCarouselImageContainer4 {
+        height: 45vh;
+    }
+
+    #exchangeCarousel .carousel-item:nth-child(1) img {
+        max-width: 30%;
+    }
+
+    #exchangeCarousel .carousel-item:nth-child(2) img {
+        max-width: 50%;
+    }
+
+    #exchangeCarousel .carousel-item:nth-child(3) img {
+        max-width: 35%;
+    }
+
+    #exchangeCarousel .carousel-item:nth-child(4) img {
+        max-width: 55%;
+    }
+
+    #exchangecarouselText{
+        height: 5rem;
+    }
+
+    #institutional{
+        width: 80%;
+        margin: 0% 10% 5% 10%;
+        padding: 5%;
+    }
+
+    #institutionalIcon {
+        width: 20%;
+    }
+
+    #explore{
+        width: 80%;
+        margin: 0% 10% 5% 10%;
+        padding: 0%;
+        min-height: 44.5rem;
+    }
+
+    #exploreText {
+        background-size: 45%;
+        padding: 5%;
+        background-position: bottom 35% right;
+    }
+
+    #exploreCarousel1{
+        width: 50% !important;
+    }
+
+    #exploreCarousel2 {
+        width: 40%;
+    }
+
+    #exploreCarousel3 {
+        width: 50%;
+    }
+
+    #exploreCarousel4 {
+        width: 55%;
     }
 
     #bar{
