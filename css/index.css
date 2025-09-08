@@ -1044,10 +1044,6 @@ nav a:hover{
         width: 80%;
     }
 
-    .exchangecarouselText{
-        height: 12vh;
-    }
-
     /* Wallet */
 
     #wallet{
@@ -1099,6 +1095,10 @@ nav a:hover{
 
     #exchangeCarousel{
         padding-right: 0;
+    }
+
+    .exchangecarouselText{
+        height: 12vh;
     }
 
     #exchangeIcon {
@@ -1355,12 +1355,8 @@ nav a:hover{
 /* Mobile Landscape */
 @media (max-width: 767px) and (orientation: landscape) {
 
-    .hideOnMobile {
+    .navbar{
         display: block;
-    }
-
-    .hideOnPc {
-        display: none;
     }
 
     .menuButton{
@@ -1368,7 +1364,7 @@ nav a:hover{
     }
 
     #topLogo{
-        width: 20%;
+        width: 25%;
     }
 
     nav a{
@@ -1431,10 +1427,6 @@ nav a:hover{
 
     .iconLinks {
         width: 7%;
-    }
-
-    .menuButton{
-        display: block;
     }
 
     #heroTitle, #heroParagraph{
@@ -1769,12 +1761,16 @@ nav a:hover{
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1366px) {
 
-    .hideOnMobile {
+    .navbar{
         display: none;
     }
 
-    .hideOnPc {
+    .menuButton{
         display: block;
+    }
+
+    #topLogo{
+        width: 25%;
     }
 
     #topLogo{
@@ -2071,12 +2067,8 @@ nav a:hover{
 
 @media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape){
  
-    .hideOnMobile {
+    .navbar{
         display: block;
-    }
-
-    .hideOnPc {
-        display: none;
     }
 
     .menuButton{
