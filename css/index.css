@@ -1900,7 +1900,7 @@ nav a:hover{
     #exchange{
         min-height: 47.5rem;
         max-height: 54.5rem;
-        padding: 0% 0% 8% 0%;
+        padding: 0%;
     }
 
     #exchangeCarousel{
@@ -1918,8 +1918,8 @@ nav a:hover{
         justify-content: center;
     }
 
-    #exchangecarouselText{
-        height: 8vh;
+    .exchangecarouselText{
+        height: 5rem;
     }
 
     #exploreCarousel p{
@@ -1996,7 +1996,7 @@ nav a:hover{
     }
 
     #explore{
-        padding: 0% 0% 8% 0%;
+        padding: 0%;
         min-height: 47.5rem;
     }
 
@@ -2014,7 +2014,7 @@ nav a:hover{
         background-image: url(../images/explore.png);
         background-size: 60%;
         background-repeat: no-repeat;
-        background-position: right bottom;
+        background-position: bottom 45% right;
         padding: 8%;
     }
 
@@ -2081,7 +2081,7 @@ nav a:hover{
     }
 
     .iconLinks{
-        width: 13%;
+        width: 12%;
     }
 
     #wallet{
@@ -2128,7 +2128,7 @@ nav a:hover{
         max-width: 55%;
     }
 
-    #exchangecarouselText{
+    .exchangecarouselText{
         height: 5rem;
     }
 
