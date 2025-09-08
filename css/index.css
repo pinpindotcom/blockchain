@@ -1355,10 +1355,14 @@ nav a:hover{
 /* Mobile Landscape */
 @media (max-width: 767px) and (orientation: landscape) {
 
-    .navbar{
+    .hideOnMobile{
         display: block;
     }
 
+    .hideOnPc{
+        display: block;
+    }
+    
     .menuButton{
         display: none;
     }
@@ -1761,8 +1765,12 @@ nav a:hover{
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1366px) {
 
-    .navbar{
+    .hideOnMobile{
         display: none;
+    }
+
+    .hideOnPc{
+        display: block;
     }
 
     .menuButton{
@@ -2066,8 +2074,12 @@ nav a:hover{
 }
 
 @media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape){
- 
-    .navbar{
+
+    .hideOnMobile{
+        display: block;
+    }
+
+    .hideOnPc{
         display: block;
     }
 
