@@ -1356,15 +1356,24 @@ nav a:hover{
 @media (max-width: 767px) and (orientation: landscape) {
 
     .hideOnMobile {
-        display: none;
-    }
-
-    .hideOnPc {
         display: block;
     }
 
+    .hideOnPc {
+        display: none;
+    }
+
+    .menuButton{
+        display: none;
+    }
+
     #topLogo{
-        width: 53%;
+        width: 20%;
+    }
+
+    nav a{
+        font-size: 14px;
+        padding: 3px 10px;
     }
 
     #sidebarTop{
@@ -1834,7 +1843,7 @@ nav a:hover{
     }
 
     #header{
-        height: 50vh;
+        height: 65vh;
     }
 
     #heroTitle{
@@ -1843,6 +1852,10 @@ nav a:hover{
 
     #heroParagraph{
         width: 90%;
+    }
+
+    #cryptoTicker{
+        top: 50%;
     }
 
     #walletPattern{
@@ -2057,6 +2070,18 @@ nav a:hover{
 }
 
 @media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape){
+ 
+    .hideOnMobile {
+        display: block;
+    }
+
+    .hideOnPc {
+        display: none;
+    }
+
+    .menuButton{
+        display: none;
+    }
 
     #header{
         height: 90vh;
@@ -2072,7 +2097,7 @@ nav a:hover{
     }
 
     #topLogo{
-        width: 30%;
+        width: 25%;
         margin-left: 2%;
     }
 
@@ -2099,7 +2124,7 @@ nav a:hover{
     #exchange{
         width: 80%;
         margin: 0% 10% 5% 10%;
-        padding: 0%;
+        padding: 0% 0% 5% 0%;
         min-height: auto;
     }
 
@@ -2146,7 +2171,7 @@ nav a:hover{
     #explore{
         width: 80%;
         margin: 0% 10% 5% 10%;
-        padding: 0%;
+        padding: 0% 0% 5% 0%;
         min-height: auto;
     }
 

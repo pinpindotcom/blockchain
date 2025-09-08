@@ -516,7 +516,15 @@ nav a:hover{
 }
 
 @media (min-width: 768px) and (max-width: 1366px){
-    
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .hideOnPc {
+        display: block;
+    }
+
     #topLogo{
         width: 26%;
     }
@@ -576,6 +584,10 @@ nav a:hover{
 
     .iconLinks{
         width: 13%;
+    }
+
+    .menuButton{
+        display: block;
     }
 
     #hero {
@@ -687,6 +699,18 @@ nav a:hover{
 
 @media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape){
 
+    .hideOnMobile {
+        display: block;
+    }
+
+    .hideOnPc {
+        display: none;
+    }
+
+    .menuButton{
+        display: none;
+    }
+
     #hero{
         background-size: 70%;
         height: 90vh;
@@ -702,7 +726,7 @@ nav a:hover{
     }
 
     #topLogo{
-        width: 30%;
+        width: 25%;
         margin-left: 2%;
     }
 
@@ -1103,8 +1127,25 @@ nav a:hover{
 
 @media (max-width: 767px) and (orientation: landscape){
 
+    .hideOnMobile {
+        display: block;
+    }
+
+    .hideOnPc {
+        display: none;
+    }
+
+    .menuButton{
+        display: none;
+    }
+
     #topLogo{
-        width: 53%;
+        width: 20%;
+    }
+
+    nav a{
+        font-size: 14px;
+        padding: 3px 10px;
     }
 
     #sidebarTop{
