@@ -1159,6 +1159,10 @@ nav a:hover{
         font-size: 14px;
         padding: 3px 10px;
     }
+    
+    nav ul {
+        padding: 0% 0% 0% 6%;
+    }
 
     #sidebarTop{
         display: flex;
