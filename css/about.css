@@ -1257,6 +1257,7 @@ nav a:hover{
 
     #aboutBlockchainIcon {
         width: 7%;
+        margin-bottom: 1%;
     }
 
     #aboutBlockchainTitle{
@@ -1268,16 +1269,17 @@ nav a:hover{
     }
 
     #aboutBlockchain .col{
-        height: 11rem;
+        height: 10rem;
+        padding: 2% 1%;
     }
 
-    #aboutBlockchain .col {
-        padding: 2% 1%;
+    #aboutBlockchain .colTitle {
+        font-size: 35px;
     }
 
     #aboutText {
         background-size: 60%;
-        padding-bottom: 35%;
+        padding-bottom: 40%;
     }
 
     #investorsTitle{
@@ -1286,6 +1288,10 @@ nav a:hover{
 
     #investorsParagraph{
         font-size: 18px;
+    }
+
+    #bar {
+        padding: 3% 7%;
     }
 
     #barText{
