@@ -1505,9 +1505,9 @@ nav a:hover{
         min-height: auto;
         padding: 6%;
         background-image: url(../images/wallet.png);
-        background-size: 80%;
+        background-size: 75%;
         background-repeat: no-repeat;
-        background-position: left top 25%;
+        background-position: left top 40%;
     }
 
     #walletIcon{
@@ -1544,7 +1544,16 @@ nav a:hover{
 
     #exchange{
         height: auto;
-        padding: 0;
+        padding: 0% 0% 6% 0%;
+    }
+
+    #exchangeText{
+        width: 100%;
+        padding: 6%;
+        background-image: url(../images/exchange.png);
+        background-size: 55%;
+        background-repeat: no-repeat;
+        background-position: left 50%;
     }
 
     #exchangeCarousel{
@@ -1562,19 +1571,10 @@ nav a:hover{
     }
 
     #exchangeCarouselImageContainer1, #exchangeCarouselImageContainer2, #exchangeCarouselImageContainer3, #exchangeCarouselImageContainer4{
-        height: 55vh;
+        height: 60vh;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    #exchangeText{
-        width: 100%;
-        padding: 6%;
-        background-image: url(../images/exchange.png);
-        background-size: 75%;
-        background-repeat: no-repeat;
-        background-position: left 45%;
     }
 
     #elist{
@@ -1583,7 +1583,7 @@ nav a:hover{
     }
 
     .exchangecarouselText {
-        height: 15vh;
+        height: 25vh;
     }
 
     #exchangeCarousel .carousel-item:nth-child(1) img {
@@ -1604,10 +1604,6 @@ nav a:hover{
         max-width: 75%;
     }
 
-    #exchangeCarousel .carousel-item:nth-child(3) h2{
-        margin: 0 !important;
-    }
-
     #exchangeButton{
         font-size: 16px;
         padding: 10px 15px;
@@ -1625,9 +1621,9 @@ nav a:hover{
         padding: 6%;
         height: auto;
         background-image: url(../images/institutional.png);
-        background-size: 100%;
+        background-size: 50%;
         background-repeat: no-repeat;
-        background-position: -10% -35%;
+        background-position: bottom right;
     }
 
     #institutionalTitle{
@@ -1649,7 +1645,7 @@ nav a:hover{
     }
 
     #explore{
-        padding: 0%;
+        padding: 0% 0% 6% 0%;
         height: auto;
     }
 
@@ -1666,11 +1662,11 @@ nav a:hover{
         width: 100%;
         background-size: 45%;
         background-position: right 40%;
-        padding: 8%;
+        padding: 6%;
     }
 
     #exploreCarouselImageContainer1, #exploreCarouselImageContainer2, #exploreCarouselImageContainer3, #exploreCarouselImageContainer4 {
-        height: 45vh;
+        height: 55vh;
     }
 
     .exploreListItem{
@@ -1707,6 +1703,10 @@ nav a:hover{
 
     #barText{
         font-size: 35px;
+    }
+
+    .footer-logo {
+        width: 50%;
     }
 }
 
