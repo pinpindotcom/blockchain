@@ -1501,7 +1501,8 @@ nav a:hover{
     /* Wallet */
 
     #wallet{
-        margin-top: 25%;
+        width: 80%;
+        margin: 25% 10% 5% 10%;
         min-height: auto;
         padding: 6%;
         background-image: url(../images/wallet.png);
@@ -1542,7 +1543,7 @@ nav a:hover{
 
     /* Exchange */
 
-    #exchange{
+    /* #exchange{
         height: auto;
         padding: 0% 0% 6% 0%;
     }
@@ -1603,10 +1604,47 @@ nav a:hover{
     #exchangeCarousel .carousel-item:nth-child(4) img {
         max-width: 75%;
     }
+    } */
 
-    #exchangeButton{
-        font-size: 16px;
-        padding: 10px 15px;
+    #exchangeIcon {
+        width: 25%;
+    }
+
+    #exchange{
+        width: 80%;
+        margin: 0% 10% 5% 10%;
+        padding: 0% 0% 5% 0%;
+        min-height: auto;
+    }
+
+    #exchangeText{
+        background-size: 55%;
+        background-position: bottom 30% left;
+        padding: 5%;
+    }
+
+    #exchangeCarouselImageContainer1, #exchangeCarouselImageContainer2, #exchangeCarouselImageContainer3, #exchangeCarouselImageContainer4 {
+        height: 45vh;
+    }
+
+    #exchangeCarousel .carousel-item:nth-child(1) img {
+        max-width: 30%;
+    }
+
+    #exchangeCarousel .carousel-item:nth-child(2) img {
+        max-width: 50%;
+    }
+
+    #exchangeCarousel .carousel-item:nth-child(3) img {
+        max-width: 35%;
+    }
+
+    #exchangeCarousel .carousel-item:nth-child(4) img {
+        max-width: 55%;
+    }
+
+    .exchangecarouselText{
+        height: 5rem;
     }
 
     #institutionalTitle{
@@ -1618,6 +1656,8 @@ nav a:hover{
     }
 
     #institutional {
+        width: 80%;
+        margin: 0% 10% 5% 10%;
         padding: 6%;
         height: auto;
         background-image: url(../images/institutional.png);
@@ -1644,7 +1684,9 @@ nav a:hover{
         padding: 10px 15px;
     }
 
-    #explore{
+    /* #explore{
+        width: 80%;
+        margin: 0% 10% 5% 10%;
         padding: 0% 0% 6% 0%;
         height: auto;
     }
@@ -1701,37 +1743,42 @@ nav a:hover{
         padding: 6%;
     }
 
-    /* #exploreCarouselImageContainer1, #exploreCarouselImageContainer2, #exploreCarouselImageContainer3, #exploreCarouselImageContainer4 {
-        height: 55vh;
+    #exploreCarousel p{
+        width: 80%;
+    } */
+
+    #exploreIcon{
+        width: 20%;
     }
 
-    .exploreListItem{
-        width: 70%;
+    #explore{
+        width: 80%;
+        margin: 0% 10% 5% 10%;
+        padding: 0% 0% 5% 0%;
+        min-height: auto;
+    }
+
+    #exploreText {
+        background-size: 45%;
+        padding: 5%;
+        background-position: bottom 35% right;
     }
 
     #exploreCarousel1{
-        max-width: 75%;
+        width: 50% !important;
     }
 
-    #exploreCarousel2{
-        max-width: 55%;
+    #exploreCarousel2 {
+        width: 40%;
     }
 
-    #exploreCarousel3{
-        max-width: 65%;
+    #exploreCarousel3 {
+        width: 50%;
     }
 
-    #exploreCarousel4{
-        max-width: 70%;
-    } */
-
-    #exploreCarousel p{
-        width: 80%;
+    #exploreCarousel4 {
+        width: 55%;
     }
-
-    /* #exploreListItem1, #exploreListItem2, #exploreListItem3, #exploreListItem4 {
-        margin-bottom: 1rem;
-    } */
 
     #bar {
         padding: 3% 7%;
