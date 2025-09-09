@@ -1620,11 +1620,11 @@ nav a:hover{
     #exchangeText{
         background-size: 55%;
         background-position: bottom 30% left;
-        padding: 5%;
+        padding: 5% 5% 0% 5%;
     }
 
     #exchangeCarouselImageContainer1, #exchangeCarouselImageContainer2, #exchangeCarouselImageContainer3, #exchangeCarouselImageContainer4 {
-        height: 45vh;
+        height: 55vh;
     }
 
     #exchangeCarousel .carousel-item:nth-child(1) img {
@@ -1760,8 +1760,15 @@ nav a:hover{
 
     #exploreText {
         background-size: 45%;
-        padding: 5%;
+        padding: 5% 5% 0% 5%;
         background-position: bottom 35% right;
+    }
+
+    #exploreCarouselImageContainer1, #exploreCarouselImageContainer2, #exploreCarouselImageContainer3, #exploreCarouselImageContainer4{
+        height:55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #exploreCarousel1{
