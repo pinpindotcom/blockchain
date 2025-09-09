@@ -1548,7 +1548,7 @@ nav a:hover{
     #exchange{
         width: 80%;
         margin: 0% 10% 5% 10%;
-        padding: 0% 0% 5% 0%;
+        /* padding: 0% 0% 5% 0%; */
         min-height: auto;
     }
 
@@ -1563,7 +1563,7 @@ nav a:hover{
     }
 
     #exchangeCarouselImageContainer1, #exchangeCarouselImageContainer2, #exchangeCarouselImageContainer3, #exchangeCarouselImageContainer4 {
-        height: 55vh;
+        height: 65vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1586,7 +1586,7 @@ nav a:hover{
     }
 
     .exchangecarouselText{
-        height: 7rem;
+        height: 5rem;
         width: 85%;
     }
 
@@ -1634,7 +1634,7 @@ nav a:hover{
     #explore{
         width: 80%;
         margin: 0% 10% 5% 10%;
-        padding: 0% 0% 5% 0%;
+        /* padding: 0% 0% 5% 0%; */
         min-height: auto;
     }
 
@@ -1645,7 +1645,7 @@ nav a:hover{
     }
 
     #exploreCarouselImageContainer1, #exploreCarouselImageContainer2, #exploreCarouselImageContainer3, #exploreCarouselImageContainer4{
-        height:55vh;
+        height: 65vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1668,7 +1668,7 @@ nav a:hover{
     }
 
     .explorecarouselText{
-        height: 7rem;
+        height: 6rem;
         width: 85%;
     }
 
