@@ -1563,7 +1563,7 @@ nav a:hover{
     }
 
     #exchangeCarouselImageContainer1, #exchangeCarouselImageContainer2, #exchangeCarouselImageContainer3, #exchangeCarouselImageContainer4 {
-        height: 100vh;
+        height: 85vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1645,7 +1645,7 @@ nav a:hover{
     }
 
     #exploreCarouselImageContainer1, #exploreCarouselImageContainer2, #exploreCarouselImageContainer3, #exploreCarouselImageContainer4{
-        height: 100vh;
+        height: 85vh;
         display: flex;
         justify-content: center;
         align-items: center;
