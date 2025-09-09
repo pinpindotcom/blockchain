@@ -1658,6 +1658,37 @@ nav a:hover{
         font-size: 22px;
     }
 
+    .exploreListItem{
+        width: 70%;
+    }
+
+    #exploreCarouselImageContainer1, #exploreCarouselImageContainer2, #exploreCarouselImageContainer3, #exploreCarouselImageContainer4{
+        height:40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #exploreCarousel2{
+        width: 75%;
+    }
+
+    #exploreCarousel3{
+        width: 80%;
+    }
+
+    #exploreCarousel4{
+        width: 90%;
+    }
+
+    .explorecarouselText{
+        height: 8vh;
+    }
+
+    #exploreListItem2, #exploreListItem3, #exploreListItem4{
+        margin-bottom: 1rem;
+    }
+
     #exploreText {
         width: 100%;
         background-size: 45%;
@@ -1665,7 +1696,7 @@ nav a:hover{
         padding: 6%;
     }
 
-    #exploreCarouselImageContainer1, #exploreCarouselImageContainer2, #exploreCarouselImageContainer3, #exploreCarouselImageContainer4 {
+    /* #exploreCarouselImageContainer1, #exploreCarouselImageContainer2, #exploreCarouselImageContainer3, #exploreCarouselImageContainer4 {
         height: 55vh;
     }
 
@@ -1687,15 +1718,15 @@ nav a:hover{
 
     #exploreCarousel4{
         max-width: 70%;
-    }
+    } */
 
     #exploreCarousel p{
         width: 80%;
     }
 
-    #exploreListItem1, #exploreListItem2, #exploreListItem3, #exploreListItem4 {
+    /* #exploreListItem1, #exploreListItem2, #exploreListItem3, #exploreListItem4 {
         margin-bottom: 1rem;
-    }
+    } */
 
     #bar {
         padding: 3% 7%;
