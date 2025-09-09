@@ -1664,21 +1664,26 @@ nav a:hover{
 
     #exploreCarouselImageContainer1, #exploreCarouselImageContainer2, #exploreCarouselImageContainer3, #exploreCarouselImageContainer4{
         height:40vh;
+        margin-bottom: 3%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    #exploreCarousel1{
+        width: 70%;
+    }
+
     #exploreCarousel2{
-        width: 75%;
+        width: 65%;
     }
 
     #exploreCarousel3{
-        width: 80%;
+        width: 70%;
     }
 
     #exploreCarousel4{
-        width: 90%;
+        width: 80%;
     }
 
     .explorecarouselText{
