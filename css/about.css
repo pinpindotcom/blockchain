@@ -950,7 +950,6 @@ nav a:hover{
 
     nav ul{
         padding: 1% 2%;
-        justify-content: space-between;
     }
 
     .sidebar{
@@ -1037,7 +1036,7 @@ nav a:hover{
     }
 
     #barText{
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .footer-logo {
@@ -1244,6 +1243,10 @@ nav a:hover{
     
     .menuButton{
         display: none;
+    }
+
+    nav ul{
+        justify-content: space-normal;
     }
 
     #hero{

@@ -396,7 +396,7 @@ nav a:hover{
 }
 
 #exchangeCarousel h2 {
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: left;
   margin-top: 1rem;
 }
@@ -890,7 +890,7 @@ nav a:hover{
 
     nav ul{
         padding: 3% 2%;
-        /* justify-content: space-between; */
+        justify-content: space-between;
     }
 
     .sidebar{
@@ -1333,7 +1333,6 @@ nav a:hover{
 
     nav ul{
         padding: 1% 2%;
-        /* justify-content: space-between; */
     }
 
     .sidebar{
@@ -1399,17 +1398,15 @@ nav a:hover{
         width: 20%;
     }
 
-    /* Wallet */
-
     #wallet{
         width: 80%;
-        margin: 25% 10% 5% 10%;
+        margin: 20% 10% 5% 10%;
         min-height: auto;
         padding: 6%;
         background-image: url(../images/index/walletBackground.png);
         background-size: 70%;
         background-repeat: no-repeat;
-        background-position: left top 40%;
+        background-position: right top 40%;
     }
 
     #walletIcon{
@@ -1440,8 +1437,6 @@ nav a:hover{
         padding: 10px 15px;
     }
 
-    /* Exchange */
-
     #exchangeIcon {
         width: 25%;
     }
@@ -1459,13 +1454,9 @@ nav a:hover{
         padding: 5% 5% 0% 5%;
     }
 
-    #exchangeCarousel h2 {
-        font-size: 1.2rem;
-    }
-
     #exchangeCarouselImageContainer1, #exchangeCarouselImageContainer2,
     #exchangeCarouselImageContainer3, #exchangeCarouselImageContainer4 {
-        height: 75vh;
+        height: 80vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1580,7 +1571,7 @@ nav a:hover{
     }
 
     #barText{
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .footer-logo {
@@ -1658,7 +1649,7 @@ nav a:hover{
 
     nav ul{
         padding: 2% 1%;
-        /* justify-content: space-between; */
+        justify-content: space-between;
     }
 
     .sidebar{
@@ -1922,6 +1913,10 @@ nav a:hover{
 
     .menuButton{
         display: none;
+    }
+
+    nav ul{
+        justify-content: space-normal;
     }
 
     #header{
