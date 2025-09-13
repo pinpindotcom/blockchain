@@ -1,9 +1,9 @@
 function showSidebar() {
     document.querySelector('.sidebar').classList.add('open');
-    document.body.style.overflow = 'hidden';
+    document.body.classList.add('no-scroll');
 }
 
 function hideSidebar() {
     document.querySelector('.sidebar').classList.remove('open');
-    document.body.style.overflow = 'auto';
+    document.body.classList.remove('no-scroll');
 }

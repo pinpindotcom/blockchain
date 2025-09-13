@@ -1608,6 +1608,10 @@ nav a:hover{
         width: 26%;
     }
 
+    .sidebarLink{
+        font-size: 19px;
+    }
+
     #sidebarTop{
         display: flex;
         justify-content: space-between;
@@ -1946,6 +1950,10 @@ nav a:hover{
 
     .sidebar{
         width: 60%;
+    }
+
+    .sidebarLink{
+        font-size: 19px;
     }
 
     .iconLinks{

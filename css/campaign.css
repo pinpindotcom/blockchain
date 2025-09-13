@@ -10,6 +10,10 @@ body{
     overflow-x: hidden;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .hideOnMobile {
     display: block;
 }
@@ -610,6 +614,10 @@ nav a:hover{
         height: 50%;
     }
 
+    .sidebarLink{
+        font-size: 19px;
+    }
+
     #productsText{
         margin: 0% 0% 3% 5%;
         margin-left: 5%;
@@ -687,6 +695,10 @@ nav a:hover{
 
     .menuButton{
         display: none;
+    }
+
+    .sidebarLink{
+        font-size: 19px;
     }
 
     nav ul{
