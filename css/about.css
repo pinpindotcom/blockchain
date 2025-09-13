@@ -60,8 +60,6 @@ nav a:hover{
     transition: 0.3s ease;
 }
 
-/* Sidebar */
-
 .sidebar{
     position: fixed;
     top: 0;
@@ -151,7 +149,7 @@ nav a:hover{
 }
 
 #hero{
-    background-image: url('../images/about/about-hero-bg.png');
+    background-image: url('../images/about/heroBackground.png');
     background-repeat: no-repeat;
     background-position: bottom right;
     height: 90vh;
@@ -283,50 +281,50 @@ nav a:hover{
 
 #walletCol{
     background-color: #ecf5fe;
-    background-image: url('../images/about/about-bg-shapes-blue.png');
+    background-image: url('../images/about/aboutShapes1.png');
     color: #0c6cf2;
 }
 
 #transactedCol{
     background-color: #e6faec;
     color: #006633;
-    background-image: url('../images/about/about-bg-shapes-green.png');
+    background-image: url('../images/about/aboutShapes2.png');
 }
 
 #transactionsCol{
     background-color: #efecfe;
     color: #5322e5;
-    background-image: url('../images/about/about-bg-shapes-purple.png');
+    background-image: url('../images/about/aboutShapes3.png');
 }
 
 #verifiedCol{
     background-color: #fff2e5;
     color: #b34400;
-    background-image: url('../images/about/about-bg-shapes-orange.png');
+    background-image: url('../images/about/aboutShapes4.png');
 }
 
 #countriesCol{
     background-color: #fcedeb;
     color: #a50d0d;
-    background-image: url('../images/about/about-bg-shapes-red.png');
+    background-image: url('../images/about/aboutShapes5.png');
 }
 
 #foundedCol{
     background-color: #f0f2f7;
     color: #353f52;
-    background-image: url('../images/about/about-bg-shapes-grey.png');
+    background-image: url('../images/about/aboutShapes6.png');
 }
 
 #aboutText{
     width: 70%;
     margin: 5% 15% 0% 15%;
-    background-image: url('../images/about/about-section-bg.png');
-    background-size: 50%;
+    background-image: url('../images/about/aboutSectionBackground.png');
+    background-size: 45%;
     background-repeat: no-repeat;
     background-position: right;
 }
 
-#aboutTextParagraph1, #aboutTextParagraph2{
+#aboutTextParagraph{
     width: 50%;
     color: #50596b;
     font-size: 18px;
@@ -344,20 +342,15 @@ nav a:hover{
     font-weight: 500;
 }
 
-#bar {
+#investors .row {
     display: flex;
-    justify-content: center;
-    background-color: #121d33;
-    color: #ffffff;
-    background-image: url(../images/bar.svg);
-    background-repeat: no-repeat;
-    background-size: 90rem;
-    background-position: -0.0625rem center;
-    padding: 4% 0%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#barText{
-    font-size: 40px;
+#investors .col {
+    flex: 1 0 30%;
+    margin: 20px 10px;
 }
 
 #bailleIcon{
@@ -384,15 +377,20 @@ nav a:hover{
     width: 25%;
 }
 
-#investors .row {
+#bar {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: #121d33;
+    color: #ffffff;
+    background-image: url(../images/global/barBackground.svg);
+    background-repeat: no-repeat;
+    background-size: 90rem;
+    background-position: -0.0625rem center;
+    padding: 4% 0%;
 }
 
-#investors .col {
-    flex: 1 0 30%;
-    margin: 20px 10px;
+#barText{
+    font-size: 40px;
 }
 
 .pc-nav {
@@ -515,263 +513,6 @@ nav a:hover{
     margin-bottom: 15%;
 }
 
-@media (min-width: 768px) and (max-width: 1366px){
-
-    .hideOnMobile {
-        display: none;
-    }
-
-    .hideOnPc {
-        display: block;
-    }
-
-    .menuButton{
-        display: block;
-    }
-
-    #topLogo{
-        width: 26%;
-    }
-
-    #sidebarTop{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #emptySpace{
-        background-color: #f7f8fa;
-        height: 10%;
-        display: flex;
-        align-content: flex-end;
-        flex-wrap: wrap;
-    }
-
-    #emptySpace2{
-        background-color: #f7f8fa;
-        height: 50%;
-    }
-
-    #productsText{
-        margin: 0% 0% 3% 5%;
-        margin-left: 5%;
-        color: #677185;
-        font-weight: 600;
-        letter-spacing: 2px;
-    }
-
-    #sidebarLogo{
-        width: 40%;
-        padding: 3% 0% 3% 2%;
-    }
-
-    #closeSidebar{
-        height: 50%;
-        border: none;
-    }
-
-    #closeButton{
-        border: none;
-        margin-right: 5%;
-    }
-
-    nav ul{
-        padding: 2% 1%;
-        justify-content: space-between;
-    }
-
-    .sidebar{
-        display: block;
-        padding: 0;
-        width: 75%;
-    }
-
-    .iconLinks{
-        width: 13%;
-    }
-
-    #hero {
-        background-image: url(../images/about/about-hero-bg.png);
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        height: 50vh;
-        background-color: #121d33;
-        color: #ffffff;
-        background-size: 92%;
-    }
-
-    #heroText {
-        width: 75%;
-        position: absolute;
-        top: 15%;
-        left: 5%;
-    }
-
-    #heroTitle {
-        font-size: 40px;
-    }
-
-    #cryptoTicker {
-        top: 35%;
-    }
-
-    #team {
-        margin: 7% 5% 0% 5%;
-        width: 90%;
-    }
-
-    #teamText {
-        width: 80%;
-        margin-bottom: 5%;
-    }
-
-    #meetOurTeam{
-        padding: 0;
-    }
-
-    #meetOurTeam .card{
-        max-width: 12rem;
-    }
-
-    #aboutBlockchain {
-        width: 90%;
-        margin: 10% 5% 0% 5%;
-    }
-
-    #aboutBlockchainIcon {
-        width: 7%;
-        margin-bottom: 2%;
-    }
-
-    #aboutBlockchainText {
-        width: 70%;
-        margin-bottom: 5%;
-    }
-
-    #aboutBlockchainTitle{
-        margin-bottom: 3%;
-    }
-
-    #aboutText {
-        width: 90%;
-        margin: 5% 5% 0% 5%;
-        background-image: url(../images/about/about-section-bg.png);
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position: bottom right;
-    }
-    #aboutBlockchain .col {
-        height: 13rem;
-    }
-
-    #aboutBlockchain .colTitle {
-        font-size: 2rem;
-    }
-
-    #aboutTextParagraph1, #aboutTextParagraph2 {
-        width: 65%;
-        color: #50596b;
-        font-size: 18px;
-    }
-
-    #investors {
-        width: 90%;
-        margin: 10% 5% 0% 5%;
-    }
-
-    #investorsParagraph {
-        width: 50%;
-        font-size: 20px;
-        color: #50596b;
-        font-weight: 500;
-    }
-
-    #mooreIcon {
-        width: 80%;
-    }
-
-    #bar{
-        padding: 5% 7%;
-        background-position: top right;
-        background-size: 100rem;
-    }
-
-    .footer-logo{
-        width: 70%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape){
-
-    .hideOnMobile{
-        display: block;
-    }
-
-    .hideOnPc{
-        display: block;
-    }
-    
-    .menuButton{
-        display: none;
-    }
-
-    #hero{
-        background-size: 70%;
-        height: 90vh;
-    }
-
-    #heroText {
-        width: 55%;
-        top: 30%;
-    }
-
-    #heroTitle {
-        font-size: 40px;
-    }
-
-    #topLogo{
-        width: 25%;
-        margin-left: 2%;
-    }
-
-    .sidebar{
-        width: 60%;
-    }
-
-    .iconLinks{
-        width: 12%;
-    }
-
-    #meetOurTeam .card {
-        max-width: 17rem;
-    }
-
-    #aboutBlockchainIcon {
-        width: 5%;
-    }
-
-    #aboutText{
-        background-position: right;
-        background-size: 35%;
-    }
-
-    #aboutBlockchain .col {
-        height: 14rem;
-    }
-
-    #aboutBlockchain .colTitle {
-        font-size: 3rem;
-    }
-
-    #bar{
-        padding: 5% 7%;
-    }
-
-    .footer-logo{
-        width: 70%;
-    }
-}
-
 @media (max-width: 767px){
 
     .hideOnMobile {
@@ -892,6 +633,10 @@ nav a:hover{
         max-width: 47%;
         padding: 0;
     }
+    
+    .card-title{
+        font-size: 18px;
+    }
 
     #aboutBlockchain {
         width: 90%;
@@ -901,10 +646,6 @@ nav a:hover{
     #aboutBlockchainIcon {
         width: 13%;
         margin-bottom: 5%;
-    }
-
-    .card-title{
-        font-size: 18px;
     }
 
     #aboutBlockchain .colTitle {
@@ -917,7 +658,8 @@ nav a:hover{
         font-size: 15px;
         font-weight: 500;
         margin: 0;
-        width: 80%;    }
+        width: 80%;    
+    }
 
     #aboutBlockchainText {
         width: 100%;
@@ -945,7 +687,7 @@ nav a:hover{
         padding-bottom: 65%;
     }
 
-    #aboutTextParagraph1, #aboutTextParagraph2 {
+    #aboutTextParagraph{
         width: 100%;
     }
 
@@ -1300,5 +1042,263 @@ nav a:hover{
 
     .footer-logo {
         width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1366px){
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .hideOnPc {
+        display: block;
+    }
+
+    .menuButton{
+        display: block;
+    }
+
+    #topLogo{
+        width: 26%;
+    }
+
+    #sidebarTop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #emptySpace{
+        background-color: #f7f8fa;
+        height: 10%;
+        display: flex;
+        align-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    #emptySpace2{
+        background-color: #f7f8fa;
+        height: 50%;
+    }
+
+    #productsText{
+        margin: 0% 0% 3% 5%;
+        margin-left: 5%;
+        color: #677185;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    #sidebarLogo{
+        width: 40%;
+        padding: 3% 0% 3% 2%;
+    }
+
+    #closeSidebar{
+        height: 50%;
+        border: none;
+    }
+
+    #closeButton{
+        border: none;
+        margin-right: 5%;
+    }
+
+    nav ul{
+        padding: 2% 1%;
+        justify-content: space-between;
+    }
+
+    .sidebar{
+        display: block;
+        padding: 0;
+        width: 75%;
+    }
+
+    .iconLinks{
+        width: 13%;
+    }
+
+    #hero {
+        background-image: url(../images/about/heroBackground.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        height: 50vh;
+        background-color: #121d33;
+        color: #ffffff;
+        background-size: 92%;
+    }
+
+    #heroText {
+        width: 75%;
+        position: absolute;
+        top: 15%;
+        left: 5%;
+    }
+
+    #heroTitle {
+        font-size: 40px;
+    }
+
+    #cryptoTicker {
+        top: 35%;
+    }
+
+    #team {
+        margin: 7% 5% 0% 5%;
+        width: 90%;
+    }
+
+    #teamText {
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    #meetOurTeam{
+        padding: 0;
+    }
+
+    #meetOurTeam .card{
+        max-width: 12rem;
+    }
+
+    #aboutBlockchain {
+        width: 90%;
+        margin: 10% 5% 0% 5%;
+    }
+
+    #aboutBlockchainIcon {
+        width: 7%;
+        margin-bottom: 2%;
+    }
+
+    #aboutBlockchainText {
+        width: 70%;
+        margin-bottom: 5%;
+    }
+
+    #aboutBlockchainTitle{
+        margin-bottom: 3%;
+    }
+
+    #aboutText {
+        width: 90%;
+        margin: 5% 5% 0% 5%;
+        background-image: url(../images/about/aboutSectionBackground.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+
+    #aboutBlockchain .col {
+        height: 13rem;
+    }
+
+    #aboutBlockchain .colTitle {
+        font-size: 2rem;
+    }
+
+    #aboutTextParagraph1, #aboutTextParagraph2 {
+        width: 65%;
+        color: #50596b;
+        font-size: 18px;
+    }
+
+    #investors {
+        width: 90%;
+        margin: 10% 5% 0% 5%;
+    }
+
+    #investorsParagraph {
+        width: 50%;
+        font-size: 20px;
+        color: #50596b;
+        font-weight: 500;
+    }
+
+    #mooreIcon {
+        width: 80%;
+    }
+
+    #bar{
+        padding: 5% 7%;
+        background-position: top right;
+        background-size: 100rem;
+    }
+
+    .footer-logo{
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape){
+
+    .hideOnMobile{
+        display: block;
+    }
+
+    .hideOnPc{
+        display: block;
+    }
+    
+    .menuButton{
+        display: none;
+    }
+
+    #hero{
+        background-size: 70%;
+        height: 90vh;
+    }
+
+    #heroText {
+        width: 55%;
+        top: 30%;
+    }
+
+    #heroTitle {
+        font-size: 40px;
+    }
+
+    #topLogo{
+        width: 25%;
+        margin-left: 2%;
+    }
+
+    .sidebar{
+        width: 60%;
+    }
+
+    .iconLinks{
+        width: 12%;
+    }
+
+    #meetOurTeam .card {
+        max-width: 17rem;
+    }
+
+    #aboutBlockchainIcon {
+        width: 5%;
+    }
+
+    #aboutText{
+        background-position: right;
+        background-size: 35%;
+    }
+
+    #aboutBlockchain .col {
+        height: 14rem;
+    }
+
+    #aboutBlockchain .colTitle {
+        font-size: 3rem;
+    }
+
+    #bar{
+        padding: 5% 7%;
+    }
+
+    .footer-logo{
+        width: 70%;
     }
 }

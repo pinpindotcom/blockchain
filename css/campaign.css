@@ -1,0 +1,703 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+}
+
+.hideOnMobile {
+    display: block;
+}
+
+.hideOnMobileElements{
+    display: block;
+}
+
+.hideOnPc {
+    display: none;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: #121d33;
+    display: flex;
+    transition: 0.1s ease;
+    border-bottom: solid 1px #414a5c;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1% 0% 1% 6%;
+    margin: 0;
+}
+
+#topLogo{
+    width: 17%;
+    margin-right: 2%;
+}
+
+nav a{
+    height: 100%;
+    padding: 3px 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #ccd2de;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: 0.1s ease;
+}
+
+nav a:hover{
+    background-color: #283347;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar li{
+    width: auto;
+    height: 6%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-top: solid 1px #f0f2f7;
+}
+
+.sidebarItem:hover .sidebarLink,
+.sidebarItem:hover p {
+    color: #121d33;
+    transition: 0.3s ease;
+}
+
+#sidebarLastElement{
+    border-bottom:  solid 1px #f0f2f7;
+}
+
+.sidebarItem{
+    width: 100%;
+    display: flex;
+    margin-left: 5%;
+}
+
+.sidebarItemText{
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+}
+
+.sidebarIcons{
+    width: 70%;
+}
+
+.sidebarLink{
+    width: 100%;
+    color: #121d33;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.iconLinks{
+    width: 15%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar p{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    color: #50596b;
+    font-weight: 500;
+}
+
+.sidebar a:hover{
+    background-color: transparent;
+}
+
+.menuButton{
+    display: none;
+}
+
+#heroContent{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: white;
+    background-size: cover;
+    background-image: url(../images/campaign/campaignHeroImage.jpg);
+    background-repeat: no-repeat;
+}
+
+#heroText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#campaignText{
+    width: 80%;
+    margin: 5% 10%;
+    background-color: white;
+    color: black;
+}
+
+.campaignTitles{
+    font-size: 20px;
+}
+
+.campaignParagraphs{
+    font-size: 16px;
+    letter-spacing: 0.02rem;
+    line-height: 25px;
+    margin-bottom: 1.5rem;
+}
+
+#bar {
+    display: flex;
+    justify-content: center;
+    background-color: #121d33;
+    color: #ffffff;
+    background-image: url(../images/global/barBackground.svg);
+    background-repeat: no-repeat;
+    background-size: 90rem;
+    background-position: -0.0625rem center;
+    padding: 4% 0%;
+}
+
+#barText{
+    font-size: 40px;
+}
+
+.footer {
+    background-color: #ffffff;
+    padding: 7% 5% 5% 5%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 30%;
+}
+
+.logo-section {
+    text-align: center;
+}
+
+.footer-logo {
+    width: 55%;
+    margin-bottom: 10%;
+}
+
+.qr-code {
+    width: 30%;
+}
+
+.qr-text {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+    color: #8d95a4;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: #144699;
+}
+
+.social-section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.social-section a{
+    margin-right: 10%;
+}
+
+.social-section img {
+    width: 105%;
+    vertical-align: middle;
+}
+
+.footer-products-columns {
+    display: block;
+    justify-content: center;
+    gap: 35%;
+}
+
+.footer-products-columns ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.logo-section {
+    flex: 1;
+}
+
+#footerProducts {
+    margin-top: 2%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #121d33;
+}
+
+.social-section {
+    flex: 1;
+    text-align: right;
+}
+
+#footerTitle{
+    font-size: 18px;
+    font-weight: 600;
+    color: #121d33;
+    margin-bottom: 15%;
+}
+
+@media (max-width: 767px){
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .hideOnMobileElements{
+        display: none;
+    }
+
+    .hideOnPc {
+        display: block;
+    }
+
+    #topLogo{
+        width: 53%;
+    }
+
+    #sidebarTop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #emptySpace{
+        background-color: #f7f8fa;
+        height: 10%;
+        display: flex;
+        align-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    #emptySpace2{
+        background-color: #f7f8fa;
+        height: 50%;
+    }
+
+    #productsText{
+        margin: 0% 0% 5% 5%;
+        margin-left: 5%;
+        color: #677185;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    #sidebarLogo{
+        width: 54%;
+        padding: 4% 0% 3% 3%;
+    }
+
+    #closeSidebar{
+        height: 50%;
+        border: none;
+    }
+
+    #closeButton{
+        border: none;
+        margin-right: 5%;
+    }
+
+    nav ul{
+        padding: 3% 2%;
+        justify-content: space-between;
+    }
+
+    .sidebar{
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .iconLinks{
+        width: 17%;
+    }
+
+    .menuButton{
+        display: block;
+    }
+
+    #heroContent{
+        background-position: 80% 10%
+    }
+
+    #heroText{
+        width: 80%;
+    }
+
+    #campaignText{
+        margin: 10%;
+    }
+
+    #bar{
+        padding: 8% 5%;
+        background-position: top right;
+    }
+
+    #barText {
+        font-size: 21px;
+    }
+    
+    .footer{
+        padding: 10% 7%;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    #imageContainer{
+        display: none;
+    }
+
+    #footerProducts{
+        border: none;
+        padding: 0;
+        margin: 5% 0% 10% 0%;
+        justify-content: flex-start;
+    }
+
+    .footer-logo{
+        margin: 0;   
+        width: 70%;
+    }
+
+    .logo-section{
+        text-align: left;
+    }
+
+    .social-section{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-logo img{
+        width: 70%;
+    }
+
+    .social-section a:last-child{
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+
+    .hideOnMobile{
+        display: block;
+    }
+
+    .hideOnMobileElements{
+        display: none;
+    }
+
+    .hideOnPc{
+        display: block;
+    }
+    
+    .menuButton{
+        display: none;
+    }
+
+    #topLogo{
+        width: 25%;
+    }
+
+    nav a{
+        font-size: 14px;
+        padding: 3px 10px;
+    }
+
+    #sidebarTop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #emptySpace{
+        background-color: #f7f8fa;
+        height: 10%;
+        display: flex;
+        align-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    #emptySpace2{
+        background-color: #f7f8fa;
+        height: 50%;
+    }
+
+    #productsText{
+        margin: 0% 0% 5% 5%;
+        margin-left: 5%;
+        color: #677185;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    #sidebarLogo{
+        width: 54%;
+        padding: 4% 0% 3% 3%;
+    }
+
+    #closeSidebar{
+        height: 50%;
+        border: none;
+    }
+
+    #closeButton{
+        border: none;
+        margin-right: 5%;
+    }
+
+    nav ul{
+        padding: 1% 2%;
+        justify-content: space-between;
+    }
+
+    .sidebar{
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .iconLinks {
+        width: 7%;
+    }
+
+    #heroText{
+        width: 100%;
+    }
+
+    #campaignText{
+        margin: 10%;
+    }
+
+    #bar {
+        padding: 3% 7%;
+    }
+
+    #barText{
+        font-size: 35px;
+    }
+
+    .footer-logo {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+
+    .hideOnMobile{
+        display: none;
+    }
+
+    .hideOnMobileElements{
+        display: none;
+    }
+
+    .hideOnPc{
+        display: block;
+    }
+
+    .menuButton{
+        display: block;
+    }
+
+    #topLogo{
+        width: 25%;
+    }
+
+    #topLogo{
+        width: 26%;
+    }
+
+    #sidebarTop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #emptySpace{
+        background-color: #f7f8fa;
+        height: 10%;
+        display: flex;
+        align-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    #emptySpace2{
+        background-color: #f7f8fa;
+        height: 50%;
+    }
+
+    #productsText{
+        margin: 0% 0% 3% 5%;
+        margin-left: 5%;
+        color: #677185;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    #sidebarLogo{
+        width: 40%;
+        padding: 3% 0% 3% 2%;
+    }
+
+    #closeSidebar{
+        height: 50%;
+        border: none;
+    }
+
+    #closeButton{
+        border: none;
+        margin-right: 5%;
+    }
+
+    nav ul{
+        padding: 2% 1%;
+        justify-content: space-between;
+    }
+
+    .sidebar{
+        display: block;
+        padding: 0;
+        width: 75%;
+    }
+
+    .iconLinks{
+        width: 13%;
+    }
+
+    .menuButton{
+        display: block;
+    }
+
+    #heroContent{
+        background-position: 80% 10%;
+    }
+
+    #campaignText{
+        margin:10%;
+    }
+
+    #bar{
+        padding: 5% 7%;
+        background-position: top right;
+        background-size: 100rem;
+    }
+
+    #barText {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape){
+
+    .hideOnMobile{
+        display: block;
+    }
+
+    .hideOnMobileElements{
+        display: none;
+    }
+
+    .hideOnPc{
+        display: block;
+    }
+
+    .menuButton{
+        display: none;
+    }
+
+    #campaignText{
+        margin: 5% 10%;
+    }
+
+    #bar{
+        padding: 5% 7%;
+    }
+
+    .footer-logo{
+        width: 70%;
+    }
+}
