@@ -996,8 +996,6 @@ nav a:hover{
         padding: 10px 15px;
     }
 
-    /* Exchange */
-
     #exchange{
         min-height: 74vh;
         padding: 0% 0% 8% 0%;
@@ -1333,6 +1331,7 @@ nav a:hover{
 
     nav ul{
         padding: 1% 2%;
+        justify-content: space-between;
     }
 
     .sidebar{
@@ -1863,7 +1862,7 @@ nav a:hover{
 
     #exploreCarouselImageContainer1, #exploreCarouselImageContainer2,
     #exploreCarouselImageContainer3, #exploreCarouselImageContainer4{
-        height:40vh;
+        height: 45vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1891,9 +1890,13 @@ nav a:hover{
     }
 
     #bar{
-        padding: 10% 7%;
+        padding: 5% 7%;
         background-position: top right;
         background-size: 100rem;
+    }
+
+    #barText {
+        font-size: 35px;
     }
 }
 
@@ -1916,7 +1919,7 @@ nav a:hover{
     }
 
     nav ul{
-        justify-content: space-normal;
+        justify-content: space-between;
     }
 
     #header{

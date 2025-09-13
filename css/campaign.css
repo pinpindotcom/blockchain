@@ -531,6 +531,7 @@ nav a:hover{
 
     nav ul{
         padding: 1% 2%;
+        justify-content: space-between;
     }
 
     .sidebar{
@@ -689,7 +690,7 @@ nav a:hover{
     }
 
     nav ul{
-        justify-content: space-normal;
+        justify-content: space-between;
     }
 
     #campaignText{
